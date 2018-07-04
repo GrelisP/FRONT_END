@@ -15,7 +15,7 @@
 	  chat during the evenings of working days (Shina)
 	• We will use Google Drive as an additional option of storage for various material (books, articles, example code of some sorts, 
 	  etc.). Furthermore, our facebook group will also serve the purpose of platform for sharing various open source material (such as
-	  links for articles or videos on the web).
+	  links for articles or videos on the web). (Aleksas)
 	
 
 	TEAM VALUES:
@@ -25,5 +25,5 @@
 	• Team succeed and fail together. (Aurimas)
 	• Respect the opinion of each other, we can make sense out of nonsense (Shina) 
 	• Humility. We are all new to the world of coding and thus we will not insult, belittle or otherwise discomfort each other over
-	  a lack of competence we may display.
+	  a lack of competence we may display. (Aleksas)
 	
