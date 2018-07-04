@@ -3,11 +3,11 @@
 						 ║ ├┤ ├─┤│││  ║ ║║║║║╣   │  │ │ ││├┤ 
 						 ╩ └─┘┴ ┴┴ ┴  ╚═╝╝╚╝╚═╝  └─┘└─┘─┴┘└─┘	
 	
-	TEAM ONE CODE	 
+		 
 
 	WORK APPROACH:
 
-	• Team is as strong as it's weakest member. 
+	• We will set clear goals and maintain consistant work pace- postponing is not an option. Responsible time managment is crutial to achive our goals. Rule of thumb: finish what you have started before stepping ahead.
 	• Face to face communication is prefered, but as a backup we can use our facebook group. (Titas)
 	• Comumnicate and collaborate - let other team members know what you are working on, about any 
 	  issues you are encountering. we honest to say that on your mind, but - to use tact. (Aurimas) 
@@ -15,15 +15,23 @@
 	  chat during the evenings of working days (Shina)
 	• We will use Google Drive as an additional option of storage for various material (books, articles, example code of some sorts, 
 	  etc.). Furthermore, our facebook group will also serve the purpose of platform for sharing various open source material (such as
-	  links for articles or videos on the web). (Aleksas)
+	  links for articles or videos on the web).
 	
 
 	TEAM VALUES:
 
-	• Support and Help to each other. It is allways a good practice while learning to go an extra mile for a team mate.
+	*• Unity- team is as strong as it's weakest member. We will learn together and from each other, we will go the extra mile for each other- working in this maner will generate best posible solutions to challenges we're facing at the time. Today it's a challenge- tomorow hopefuly it will be just a piece of code. 
+	• Peacfullnes- we all have chose same direction before we met. Now we are rocking the same boat, possibly a space shuttle. There will be hard times trying to find best option, we must say what we think and do it in peacefull way.
 	• Journey is more important than the destination. (Titas)
 	• Team succeed and fail together. (Aurimas)
 	• Respect the opinion of each other, we can make sense out of nonsense (Shina) 
 	• Humility. We are all new to the world of coding and thus we will not insult, belittle or otherwise discomfort each other over
-	  a lack of competence we may display. (Aleksas)
+	  a lack of competence we may display.
+
+
+
+
+
+ 
+
 	
