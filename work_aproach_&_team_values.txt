@@ -11,8 +11,7 @@
 	• Face to face communication is prefered, but as a backup we can use our facebook group. (Titas)
 	• Comumnicate and collaborate - let other team members know what you are working on, about any 
 	  issues you are encountering. we honest to say that on your mind, but - to use tact. (Aurimas) 
-	• One hour meeting with a cup of coffee atfer each weekend classes, and 30 minutes group video 
-	  chat during the evenings of working days (Shina)
+	• Live meetings to code and discuss as well as video chats, frequency will depend on the need and availability.
 	• We will use Google Drive as an additional option of storage for various material (books, articles, example code of some sorts, 
 	  etc.). Furthermore, our facebook group will also serve the purpose of platform for sharing various open source material (such as
 	  links for articles or videos on the web).
