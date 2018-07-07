@@ -9,11 +9,9 @@
 
 	• We will set clear goals and maintain  a consistant work pace- postponing is not an option. Responsible time management is crutial in order to achive our goals. 
 	• Face to face communication is prefered, but as a backup we can use online communication. 
-	• Comumnicate and collaborate - let other team members know what you are working on and/or any 
-	  issues you are encountering. Be honest to say what is on your mind.
+	• Comumnicate and collaborate - let other team members know what you are working on and/or any issues you are encountering. Be honest to say what is on your mind.
 	• Live meeting to code and discuss as well as video chat frequency will depend on the need and availability.
-	• We will use Google Drive as an additional option of storage for various material (books, articles, example code of some sorts, 
-	  etc.). Furthermore, our facebook group (or another platform we move to) will also serve the purpose of platform for sharing 		various open source material (such as links for articles or videos on the web).
+	• We will use Google Drive as an additional option of storage for various material (books, articles, example code of some sorts, etc.). Furthermore, our facebook group (or another platform we move to) will also serve the purpose of platform for sharing various open source material (such as links for articles or videos on the web).
 	
 
 	TEAM VALUES:
@@ -22,8 +20,7 @@
 	• Fun. Journey is more important than the destination. We have fun while coding. We don't take ourselves too seriously. 
 	• Commitment. If we enjoy our journey and if we stay commited to it, good results will come naturally.
 	• Respectfulness. Respect each other and how different we are, so we could make sense out of nonsense.
-	• Humility. We are all new to the world of coding and thus we will not insult, belittle or otherwise discomfort each other over
-	  a lack of competence we may display.
+	• Humility. We are all new to the world of coding and thus we will not insult, belittle or otherwise discomfort each other over a lack of competence we may display.
 
 
 
