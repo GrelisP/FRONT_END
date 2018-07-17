@@ -1,19 +1,19 @@
 /* Titas CSS section start*/
-section.second_section {
+section.second-section {
 	background-color: #7EA2AA;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	min-height: 300px;
 }
 
-section.second_section div.flex-container{	
+section.second-section div.flex-container{	
   display: flex;
   justify-content: center;
   /* This part makes it responsive*/
   flex-wrap: wrap;
 }
 
-section.second_section p{
+section.second-section p{
 	width: 350px;
 	margin: 10px;
 	border-radius: 5px;
@@ -23,11 +23,11 @@ section.second_section p{
 
 }
 
-section.second_section h2{
+section.second-section h2{
 	margin: 0px;
 }
 
-section.second_section img{
+section.second-section img{
     float: right;
     width: 150px;
     margin-left: 5px;
