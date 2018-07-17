@@ -18,7 +18,8 @@ section.second_section p{
 	margin: 10px;
 	border-radius: 5px;
 	box-shadow: 5px 10px 18px #888888;
-	background-color: #8BE8CB;
+	background-color: #888DA7;
+
 }
 
 section.second_section h2{
@@ -29,6 +30,7 @@ section.second_section img{
     float: right;
     width: 150px;
     margin-left: 5px;
-    border-radius: 5px
+    border-radius: 5px;
+    margin-right: 5px;
 }
 /* Titas CSS section end*/
