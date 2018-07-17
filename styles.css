@@ -14,11 +14,11 @@ section.second_section div.flex-container{
 }
 
 section.second_section p{
-	border: 1px solid #303633;
 	width: 350px;
 	margin: 10px;
 	border-radius: 5px;
 	box-shadow: 5px 10px 18px #888888;
+	background-color: #8BE8CB;
 }
 
 section.second_section h2{
@@ -31,5 +31,4 @@ section.second_section img{
     margin-left: 5px;
     border-radius: 5px
 }
-
 /* Titas CSS section end*/
