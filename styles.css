@@ -42,5 +42,6 @@ section.second-section strong, section.second-section span {
 section.second-section span.last-paragraph {
 	display: block;
 	margin-top: 15px;
+	margin-bottom: 0px;
 }
 /* Titas CSS section end*/
