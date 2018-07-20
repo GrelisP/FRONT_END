@@ -1,3 +1,105 @@
+/*Aurimas section style*/
+header{
+	background-color: #303633 ;
+	position: fixed;
+	min-height: 50px;
+	width: 100%;
+	font-size: .85em;
+}
+.fixedm {
+	min-height: 50px;
+	background-color: #7EA2AA
+}
+nav ul {
+	max-width: 669px;
+    display: flex;
+	justify-content: space-between;
+	font: 1.2em Helvetica, Arial, sans-serif;
+}
+nav li>a, .dropbtn {
+	color: #bbb;
+	text-decoration: none;
+}
+nav li {
+	list-style: none;
+	font-family: 'Rationale', Helvetica, sans-serif;
+}
+/*Dropdown menu*/
+nav a:hover, .dropdown:hover .dropbtn {
+    color: whitesmoke;
+}
+.dropdown .dropbtn {
+    border: none; 
+    background-color: inherit;
+    font-family: inherit;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #303633;
+}
+.dropdown-content a {
+    float: none;
+    color: #bbb;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content ul {
+	font: inherit;
+	display: inline;
+	padding: 0;
+}
+
+/*for smaller screen*/
+@media (max-width: 750px) { 
+	header {
+		background: #7EA2AA;
+		position: unset;
+	}
+	.fixedm {
+		display: none;
+	}
+	nav ul {
+	 	flex-direction: column;
+		text-align: center;
+		max-width: 362px;
+    	margin: 0 auto;
+		margin-top: 5px;  
+		padding: 0; 
+	}
+	nav li{
+		padding: 10px;
+		margin: 1px;
+		background-color: #303633;
+	}
+	.dropdown-content {
+		position: absolute;
+		background: none;
+		width: 100%;
+    	max-width: 340px;
+		padding-top: 10px;
+		background-color: #888888;
+		padding: 0;
+	}
+	.dropdown-content a {
+		padding: 0;
+	}
+	.dropdown-content li {
+		background: none;
+	}
+	.dropdown:hover .dropdown-content {
+		display: contents;
+	}
+	.dropdown:hover {
+		background-color: #888888;
+	}
+}
+/*Aurimas end*/
 /* Titas CSS section start*/
 section.second-section {
 	background-color: #7EA2AA;
