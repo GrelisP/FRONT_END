@@ -104,6 +104,20 @@ nav a:hover, .dropdown:hover .dropbtn {
 	}
 }
 /*Aurimas end*/
+
+ /* Hamzat's code starts here */
+section.banner {
+	max-height: 500px;
+	background-image:url("img.jpg");
+	background-size: cover; 
+	margin-top: 1px;     
+}
+
+h1 {
+	padding: 200px 0;
+}
+  /* Hamzat's code ends here */
+
 /* Titas CSS section start*/
 section.second-section {
 	background-color: #7EA2AA;
