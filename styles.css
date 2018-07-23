@@ -132,21 +132,21 @@ section.banner {
   /* Hamzat's code ends here */
 
 /* Titas CSS section start*/
-section.second-section {
+.second-section {
 	background-color: #7EA2AA;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	min-height: 300px;
 }
 
-section.second-section div.flex-container {	
+.second-section .flex-container {	
   display: flex;
   justify-content: center;
   /* This part makes it responsive*/
   flex-wrap: wrap;
 }
 
-section.second-section p {
+.second-section p {
 	width: 350px;
 	margin: 10px;
 	border-radius: 5px;
@@ -155,11 +155,12 @@ section.second-section p {
 	padding:5px;
 }
 
-section.second-section h2 {
+.second-section h2 {
 	margin: 0px;
+	padding-left: 40px;
 }
 
-section.second-section img {
+.second-section img {
     float: right;
     width: 150px;
     margin-left: 5px;
@@ -167,12 +168,12 @@ section.second-section img {
     margin-right: 5px;
 }
 
-section.second-section strong, section.second-section span {
+.second-section strong, .second-section span {
 	display: block;
 	margin-bottom: 15px;
 }
 
-section.second-section span.last-paragraph {
+.second-section .last-paragraph {
 	display: block;
 	margin-top: 15px;
 	margin-bottom: 0px;
