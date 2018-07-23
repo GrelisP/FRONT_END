@@ -166,49 +166,43 @@ section.second-section span.last-paragraph {
 	margin-bottom: 0px;
 }
 /* Titas CSS section end*/
-/* Povilas start */
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300');
 
-.top-container div a img{
-height: 30px;
-}
-
+/*povilas footer start*/
 footer{
+	text-align: center;
+	box-sizing: border-box;	
 	background-color:  rgb(136, 167, 163);
 	min-height: 70px;
 	background: linear-gradient(to bottom right, #888DA7, rgb(136, 167, 163));
-	border-bottom: 1.5px solid black;		
-	text-align: center;
-}	
-
-.top-container {
-	display: flex;
-	justify-content: space-evenly;
-	width: 65%;
-	margin: 0 auto;
-	flex-wrap: wrap;
-	margin: 0 auto;	
+	border-bottom: 1.5px solid black;
 }
 
-.middle-container{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-
+.top-container, .input-container{
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;	
 }
-.bottom-container{
-	display: flex;
+
+ .social-container{
+	display:flex;
 	justify-content: space-between;
-	padding-right: 66px;
-	margin-bottom: 0px;
-	font-family: 'Rajdhani', sans-serif;
-	text-align: center;
-	color: rgb(64, 77, 88);
-	font-size: 10px;
-	padding-left: 90px;	
-	min-height: 30px;	
+	flex-wrap: wrap;		
 }
 
+.input-container{
+	padding-top: 4px;
+}
+
+.input-container input{
+	background-color: #888DA7;
+	border-style: none;
+	color: #DCDCDC;
+	width: 200px;
+	text-align: center;
+	border-left: 1px solid rgb(126, 124, 124);
+	border-right: 1px solid rgb(126, 124, 124);
+	margin-bottom: 5px;
+}
 .input input{
 	height:  23.1px;
 	background-color: #888DA7;
@@ -219,57 +213,62 @@ footer{
 	border-left: 1px solid rgb(126, 124, 124);
 	border-right: 1px solid rgb(126, 124, 124);
 }
-.input input:focus{
+.input-container input:focus{
 	background-color: white;
 	color:black;
 		
 }
-.input input:hover{
+.input-container input:hover{
 	background-color: white;
 	color:black;
 	transition-duration: 1s;
 }
-.input a button{
+.input-container a button{
 	height: 25.7px;
 	background-color: rgb(136, 148, 167);
 	border: 1px solid rgb(126, 124, 124);	
 	color: rgb(126, 124, 124);
 	border-radius: 2px;
 	transition-duration: 0.5s;
-	margin-top: 5px;
 }
 
-.input a button:hover{
+.input-container a button{
+	height: 25.7px;
+	background-color: rgb(136, 148, 167);
+	border: 1px solid rgb(126, 124, 124);	
+	color: rgb(126, 124, 124);
+	border-radius: 2px;
+	transition-duration: 0.5s;
+	
+}
+
+.input-container a button:hover{
 	background-color: rgb(87, 80, 80);
 	color: white;
 }
 
-.input{
-	display: inline-block;
-	padding-top: 4px;
-	margin-bottom: 5px;	
+footer img{
+	height: 32px;
 }
 
-.social-container{
-	width: 300px;
-	display: flex;
-	justify-content: space-between;
-	padding-top:7px;	
+.social-container, .input-container{
+	display: inline-block;
+	width: 20%;
 }
 
 .social-container a:hover{
 	background-color: white;	
 	transition-duration: 0.4s;
 	border-radius: 2px;
-		
+	padding-top:20px;
 }
 
-.bottom-container div a img{
-	height: 13px;
-	padding-left: 10px;
-	padding-top: 10px;
+#up img{
+	height: 10px;
 }
-/*Povilas form start*/
+
+
+/*Povilas form end*/
 
 .question_form, .name{
 	display: flex;
