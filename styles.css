@@ -131,6 +131,39 @@ section.banner {
 }
   /* Hamzat's code ends here */
 
+/*Alexo code starts here*/
+.count {
+	min-height: 300px;
+	background-color: rgb(83, 110, 116);
+	}
+
+.wrappy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 300px;
+}
+.pirk {
+	background-color: #08c918;
+	font-size: 28px;
+	padding: 10px;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+	color: aliceblue;
+	box-shadow: 0 5px #999;
+}
+.pirk:hover {
+	background-color: #24e42b
+}
+.pirk:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(3px);
+  }
+/*Alexo code end here*/
+
 /* Titas CSS section start*/
 section.second-section {
 	background-color: #7EA2AA;
