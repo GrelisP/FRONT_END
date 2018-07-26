@@ -186,86 +186,21 @@ footer{
 	background-color:  rgb(136, 167, 163);
 	min-height: 70px;
 	background: linear-gradient(to bottom right, #888DA7, rgb(136, 167, 163));
-	border-bottom: 1.5px solid black;
+	border-bottom: 1.5px solid black;	
 }
 
-.top-container, .input-container{
-	display:flex;
-	justify-content: space-around;
-	flex-wrap: wrap;	
+footer a{
+	float:right;
+	margin-right: 20px;
 }
-
  .social-container{
-	display:flex;
-	justify-content: space-between;
-	flex-wrap: wrap;		
-}
-
-.input-container{
-	padding-top: 4px;
-}
-
-.input-container input{
-	background-color: #888DA7;
-	border-style: none;
-	color: #DCDCDC;
-	width: 200px;
-	text-align: center;
-	border-left: 1px solid rgb(126, 124, 124);
-	border-right: 1px solid rgb(126, 124, 124);
-	margin-bottom: 5px;
-}
-.input input{
-	height:  23.1px;
-	background-color: #888DA7;
-	border-style: none;
-	color: #DCDCDC;
-	width: 200px;
-	text-align: center;
-	border-left: 1px solid rgb(126, 124, 124);
-	border-right: 1px solid rgb(126, 124, 124);
-}
-.input-container input:focus{
-	background-color: white;
-	color:black;
-		
-}
-.input-container input:hover{
-	background-color: white;
-	color:black;
-	transition-duration: 1s;
-}
-.input-container a button{
-	height: 25.7px;
-	background-color: rgb(136, 148, 167);
-	border: 1px solid rgb(126, 124, 124);	
-	color: rgb(126, 124, 124);
-	border-radius: 2px;
-	transition-duration: 0.5s;
-}
-
-.input-container a button{
-	height: 25.7px;
-	background-color: rgb(136, 148, 167);
-	border: 1px solid rgb(126, 124, 124);	
-	color: rgb(126, 124, 124);
-	border-radius: 2px;
-	transition-duration: 0.5s;
-	
-}
-
-.input-container a button:hover{
-	background-color: rgb(87, 80, 80);
-	color: white;
+	display:flex;	
+	justify-content: center;	
+	padding-bottom: 10px;
 }
 
 footer img{
 	height: 32px;
-}
-
-.social-container, .input-container{
-	display: inline-block;
-	width: 20%;
 }
 
 .social-container a:hover{
@@ -279,21 +214,99 @@ footer img{
 	height: 10px;
 }
 
-
 /*Povilas form end*/
-
-.question_form, .name{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width:400px;
-	margin:0 auto;
+.form{
+	background-color:  #888DA7;	
 }
 
-.name-sur{
+.question_form{
+	max-width: 60%;
+	margin: 0 auto;	
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
+	
 }
 
+label, input, textarea, select {
+	box-sizing: border-box;
+	display: block;
+	width: 45%;
+	margin-left: 0px;
+}
 
+input, select, textarea{
+	background-color: rgba(0, 0, 0, 0.048);
+	border: none;
+	border-bottom: 1px solid rgba(255, 0, 0, 0.185);
+	width: 100%;
+}
+
+input{
+	font-size: 12px;	
+	height: 20px;
+	
+}
+label{
+	font-size: 15px;
+	padding-top: 10px;
+	white-space: nowrap;
+}
+
+textarea{
+	min-height: 50px;
+	
+	resize: none;
+}
+
+.right, .left{
+	width: 45%;
+}
+
+.right input{	
+	height: 20px;
+}
+
+.right label{
+	white-space: nowrap;
+}
+
+.right a button, .sendBTN{
+	height: 20px;
+	background-color: rgb(136, 148, 167);
+	border: 1px solid rgb(126, 124, 124);	
+	color: rgb(126, 124, 124);
+	border-radius: 2px;	
+	margin-top:6%;	
+	width: 80px;
+	margin-bottom: 20px;
+}
+
+.right a button:hover{
+	background-color: rgb(87, 80, 80);
+	color: white;
+}
+.sendBTN input:hoover{
+	background-color: rgb(87, 80, 80);
+	color: white;
+}
+
+.right input{
+	height:  20px;
+	background-color: #888DA7;
+	border-style: none;
+	color: #DCDCDC;
+	max-width:120px;	
+	border-left: 1px solid rgb(126, 124, 124);
+	border-right: 1px solid rgb(126, 124, 124);
+}
+.right input:focus{
+	background-color: white;
+	color:black;
+		
+}
+.right input:hover{
+	background-color: white;
+	color:black;
+	transition-duration: 1s;
+}
 /*Povilas form end*/
