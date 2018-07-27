@@ -109,17 +109,18 @@ nav a:hover, .dropdown:hover .dropbtn {
 section.banner {
 	height: 500px;
 	background-image:url("img.jpg");
-	background-size: cover;      
+	background-size: cover; 
+	position: relative;     
 }
 
 .banner h1 {
-	margin-top: 0;
 	color: white;
 	font-size: 4em;
 	background-color: black;
 	display: inline-block;
-	margin: 200px 10px;
-	padding:0 7px;
+	top: 25%;
+	left: 5%;
+	position: absolute;
 }
 
 .banner h1 a{
