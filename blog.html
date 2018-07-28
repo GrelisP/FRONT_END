@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<title>[Your website title]</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="normalize.css"/>
+  		<link rel="stylesheet" type="text/css" href="styles.css"/>
+	</head>	
+	<body>
+		<!-- Aurimas section navigation start-->
+		<header>
+			<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">Program
+						<i class="fas fa-angle-double-right"></i>
+						</button>
+						<div class="dropdown-content">
+						<ul>
+						  <li><a href="#">Speaker's</a></li>
+						  <li><a href="#">Shedule</a></li>
+						  <li><a href="#">Contests &amp; Events</a></li>
+						</ul>
+						</div>
+					  </div> 
+				</li>
+				<li><a href="#recent-news">Recent news</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="archives.html">Archives</a></li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">About
+						<i class="fas fa-angle-double-right"></i>
+						</button>
+						<div class="dropdown-content">
+						<ul>
+						  <li><a href="about.html">Contacts</a></li>
+						  <li><a href="about.html">Sponsors &amp; Partners</a></li>
+						  <li><a href="about.html">FAQ</a></li>
+						  <li><a href="about.html">Policies</a></li>
+						</ul>
+						</div>
+					  </div> 
+				</li>
+			</ul>
+			</nav>
+		</header>
+			<div class="fixedm"></div>
+		<!-- Aurimas section navigation end-->
+		<!-- banner is hidden
+        <section class="banner">
+			<h1><a href="#">DEFCON</a></h1>
+		</section>
+		-->
+		<!--Alex code begins here-->
+		<section class="count">
+			<div class="wrappy">
+				<div class="seeu">See you in...</div>
+				<div id="clock">
+					<script>
+						var countDownDate = new Date("Sep 9, 2018 09:00:00").getTime();
+						var x = setInterval(function () {
+							var now = new Date().getTime();
+							var distance = countDownDate - now;
+							var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+							var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+							var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+							var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+							document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+								+ minutes + "m " + seconds + "s ";
+
+							if (distance < 0) {
+								clearInterval(x);
+								document.getElementById("clock").innerHTML = "RIGHT NOW!";
+							}
+						}, 1000);
+					</script>
+				</div>
+				<button class="pirk">
+					BUY NOW!
+				</button>
+			</div>
+		</section>
+
+		<!--Alex code ends here-->
+		<!-- Titas 2 section-blog start -->
+		<section class="second-section-blog" id="recent-news">
+			<h2>THE DEF CON BLOG</h2>
+			<div class="flex-container">
+				<p>
+					<strong>Reg tech</strong>
+					<span>	
+						Titas Aleksandravicius - financial reporting enthusiast
+					</span>
+					<img src="2sectionImages/Regtech.JPG" alt="contests"/>	
+					What is regulatory technology or better knows as Regtech and why it has
+					great potential? To better understand it, we need to look at the reasons
+					and context which lead to the growth of Regtech. Firstly after the 2008
+					financial crisis, people and politicialns were not happy with the performance
+					of the financial sector. This lead to an increase of regulation. Secondly,
+					there is a growth of fintech companies which put presure on the brick
+					and mortart companies of the financial sector. One of the competiteve
+					advantages of the fintech is the create financial products with the
+					newest techologies and offer better deals.
+					asdas
+					da
+					sd
+					as
+					da
+					sd
+sd
+					sdddddddddddddddddddddddddddddddddddddddsd
+					sdddddddddddddddddddddddddddddddddddddddsd
+					sdddddddddddddddddddddddddddddddddddddddsd
+					sdddddddddddddddddddddddddddddddddddddddsd
+					sddddddddddddddddddddddddddddddddddddddd
+					asdasd
+					sdddddddddddddddddddddddddddddddddddddddd
+
+				</p>
+				<p>
+					<strong>Demo Labs for DEF CON 26 Posted!</strong>
+					<img src="2sectionImages/demoLabs.JPG" alt="demoLabs"/>
+					More DEF CON 26 goodies for your perusal – Demo Labs are Live! You should take a moment to check out the lineup, and set aside some time to visit when you’re at the Con. In addition to being a cool way to see what your fellow hackers are working on, it’s an opportunity to offer your expertise, meet potential collaborators and help push the community forward.
+					<span>
+						Demo Labs are interactive, so, you know, interact.
+					</span>
+					Just over a month, people!
+				</p>
+				<p>
+					<strong>DEF CON 26 Workshops!</strong>
+					<img src="2sectionImages/workshops.JPG" alt="workshops"/>
+					Another milestone on the Road to DEF CON 26! The workshops page is live on the DEF CON site. Registration is still a ways off - July 8, to be precise, but now is the perfect time to get yourself familiar with the offerings. The spots traditionally fill up pretty quick, so be ready to claim your seat when the light turns green next month, maybe even consider a few backups.
+					<span class="last-paragraph">
+						It’s officially summertime in our host hemisphere - the season of DEF CON has begun!
+					</span>
+				</p>
+				<p>
+					<strong>The Entire lineup of DEF CON 26 Talks is Live!</strong>
+					<img src="2sectionImages/lineup.JPG" alt="lineup"/>
+					DEF CON family, the time of our reunion approaches. In just a few days, summer arrives in the Northern Hemisphere. The pages of the calendar turn, ever closer to August. Today comes the surest sign - the DEF CON 26 speaker list is live on DEFCON.org. 
+					<span>
+						The wait is over - dig into the list to start your conference planning! We’re proud of the lineup we’ve created this year, and we think whatever your particular itch you’ll find some talks and panels that scratch it for you.
+					</span>
+					<span>
+						We’d also like to take a moment to thank the undersung heroes of the Selection Committee. They devote crazy amounts of time and energy to working through hundreds and hundreds of proposals to make sure the best ones make it to the top of the pile. They work hard, they make us great and they deserve your appreciation.
+					</span>
+					It’s almost here, hacker fam. Can you feel it?
+				</p>
+			</div>
+		</section>
+		<!-- Titas 2 section-blog end -->
+		<!--Povilas form start-->
+		<section class="form">
+				<form class="question_form">
+					<div class="left">
+						<h2>
+							Questions
+						</h2>
+						<label for="i_am">
+							I am:					
+						</label>
+							<select name="who" id="i_am">
+								<option value="volunteer">Volunteer</option>
+								<option value="participant">Participant</option>
+								<option value="press">Press</option>
+								<option value="other">Other</option>
+							</select>	
+						<label for="first_name">
+							First Name
+						</label>
+							<input type="text" id="first_name">
+						<label for="last_name">
+							Last name
+						</label>
+							<input type="text" id="last_name">
+						<label for="email">
+							Email
+						</label>
+							<input type="email" id="email">							
+						<label for="question">
+							Question
+						</label>				
+							<textarea id="question"></textarea>
+						<input id="sendBtn" class="sendBTN" type="submit" value="send">		
+					</div>	
+					<div class="right">
+						<h2>
+							Newsletter
+						</h2>
+						<label for="subscribe">
+							Stay tuned-subscribe!
+						</label>
+						<input id="subscribe" type="text" placeholder="Enter your mail address">
+						<a href="#"><button class="subscribe">subscribe</button></a>
+					</div>	
+				</form>				
+		</section>
+		<!--Povilas form end-->
+		<!--Povilas footer start-->
+		<footer>
+			<div class="top-container">
+				<div class="social-container"> 
+					<a href="#" title="Facebook"><img src="icons/f1.png"></a>
+					<a href="#" title="Twiter"><img src="icons/t1.png"></a>
+					<a href="#" title="LinkedIn"><img src="icons/l1.png"></a>
+					<a href="#" title="Instagram"><img src="icons/i1.png"></a>
+					<a href="#" title="Youtube"><img src="icons/y1.png"></a>							
+				</div>
+				<a id="up" href="#" title="go up"><img src="icons/up3.png"></a>
+			</div>			
+				Powered by Team One CODE. All copyrights reserved.				
+		</footer>
+		<!--Povilas footer end-->		
+	</body>
+</html>
+
+
+
+
+
+
+			
