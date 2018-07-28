@@ -110,7 +110,7 @@ section.banner {
 	height: 500px;
 	background-image:url("img.jpg");
 	background-size: cover; 
-	position: relative;     
+	     
 }
 
 .banner h1 {
@@ -118,9 +118,10 @@ section.banner {
 	font-size: 4em;
 	background-color: black;
 	display: inline-block;
-	top: 25%;
-	left: 5%;
-	position: absolute;
+	margin-left: 5%;
+	margin-top: 180px;
+	letter-spacing: 30px;
+	padding
 }
 
 .banner h1 a{
