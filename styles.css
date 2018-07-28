@@ -16,21 +16,12 @@ header{
 	min-height: 50px;
 	background-color: #7EA2AA
 }
-<<<<<<< HEAD
-
-nav ul {	
-    display: flex;
-	justify-content: space-between;	
-	padding-left: 0px;
-	margin:2% 5%;		
-=======
 nav ul {
 	max-width: 50%;
     display: flex;
 	justify-content: space-between;
 
 	
->>>>>>> 8a0ca5738ebfd55486e1a009c17086541a9ea8ea
 }
 
 nav li>a, .dropbtn {
