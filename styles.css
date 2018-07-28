@@ -116,17 +116,16 @@ section.banner {
 	height: 500px;
 	background-image:url("img.jpg");
 	background-size: cover; 
-	     
+	display: flex;
+	justify-content: center;
+	align-items: center;     
 }
 
 .banner h1 {
 	color: white;
 	font-size: 5em;
 	background-color: black;
-	display: inline-block;
-	margin-left: 5%;
-	margin-top: 180px;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 
 .banner h1 a{
@@ -155,6 +154,7 @@ section.banner {
 	background-size: cover;
 	background-position: center;
 }
+
 .pirk {
 	background-color: #08c918;
 	font-size: 28px;
