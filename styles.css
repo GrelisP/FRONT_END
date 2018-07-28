@@ -8,8 +8,7 @@ header{
 	position: fixed;
 	min-height: 50px;
 	width: 100%;
-	font-size: .85em;
-	padding-left: 2%;
+	font-size: .85em;		
 }
 
 .fixedm {
@@ -17,11 +16,11 @@ header{
 	background-color: #7EA2AA
 }
 nav ul {
-	max-width: 50%;
+	max-width: 51%;
     display: flex;
-	justify-content: space-between;
-
-	
+	justify-content: space-between;	
+	margin-left: 5%;
+	padding-left: 0px;	
 }
 
 nav li>a, .dropbtn {
@@ -30,7 +29,7 @@ nav li>a, .dropbtn {
 	
 }
 nav li {
-	list-style: none;
+	list-style: none;	
 }
 
 /*Dropdown menu*/
@@ -152,6 +151,9 @@ section.banner {
 	justify-content: space-around;
 	align-items: center;
 	min-height: 300px;
+	background-image: url(cdimg.jpg);
+	background-size: cover;
+	background-position: center;
 }
 .pirk {
 	background-color: #08c918;
@@ -278,7 +280,8 @@ footer img{
 }
 
 .question_form{
-	max-width: 60%;
+	padding-left: 5%;
+	padding-right: 5%;	
 	margin: 0 auto;	
 	display: flex;
 	justify-content: space-between;
