@@ -8,8 +8,7 @@ header{
 	position: fixed;
 	min-height: 50px;
 	width: 100%;
-	font-size: .85em;
-	padding-left: 2%;
+	font-size: .85em;		
 }
 
 .fixedm {
@@ -19,9 +18,9 @@ header{
 nav ul {
 	max-width: 50%;
     display: flex;
-	justify-content: space-between;
-
-	
+	justify-content: space-between;	
+	margin-left: 5%;
+	padding-left: 0px;	
 }
 
 nav li>a, .dropbtn {
@@ -30,7 +29,7 @@ nav li>a, .dropbtn {
 	
 }
 nav li {
-	list-style: none;
+	list-style: none;	
 }
 
 /*Dropdown menu*/
