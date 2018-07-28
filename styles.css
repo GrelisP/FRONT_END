@@ -19,6 +19,7 @@ nav ul {
 	max-width: 50%;
     display: flex;
 	justify-content: space-between;
+
 	
 }
 nav li>a, .dropbtn {
@@ -64,7 +65,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 @media (max-width: 750px) { 
 	header {
 		background: #7EA2AA;
-		position: unset;
+		position: unset;	
 	}
 	.fixedm {
 		display: none;
@@ -74,14 +75,18 @@ nav a:hover, .dropdown:hover .dropbtn {
 		text-align: center;
 		max-width: 362px;
     	margin: 0 auto;
-		margin-top: 5px;  
 		padding: 0; 
 	}
 	nav li{
 		padding: 10px;
-		margin: 1px;
+		margin-bottom: 1px;
 		background-color: #303633;
 	}
+
+	ul li:last-child {
+	  margin-bottom: 0;
+	}
+
 	.dropdown-content {
 		position: absolute;
 		background: none;
