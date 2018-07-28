@@ -126,8 +126,8 @@ section.banner {
 	display: inline-block;
 	margin-left: 5%;
 	margin-top: 180px;
-	letter-spacing: 50px;
-	padding-left: 45px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .banner h1 a{
