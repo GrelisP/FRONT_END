@@ -282,7 +282,6 @@ footer img{
 
 .question_form{
 	padding-left: 5%;
-	padding-right: 5%;	
 	margin: 0 auto;	
 	display: flex;
 	justify-content: space-between;
@@ -370,5 +369,13 @@ textarea{
 	background-color: white;
 	color:black;
 	transition-duration: 1s;
+}
+
+.right{
+	background-color: rgb(90, 94, 112);
+	padding-left: 5%;
+	width: 50%;
+	
+	
 }
 /*Povilas form end*/
