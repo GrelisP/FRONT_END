@@ -279,7 +279,8 @@ footer img{
 }
 
 .question_form{
-	max-width: 60%;
+	padding-left: 5%;
+	padding-right: 5%;	
 	margin: 0 auto;	
 	display: flex;
 	justify-content: space-between;
