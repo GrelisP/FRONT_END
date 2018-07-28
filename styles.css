@@ -138,8 +138,7 @@ section.banner {
 	display: inline-block;
 	margin-left: 5%;
 	margin-top: 180px;
-	letter-spacing: 50px;
-	padding-left: 45px;
+	padding: 0 5px;
 }
 
 .banner h1 a{
@@ -161,7 +160,7 @@ section.banner {
 .wrappy {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	min-height: 300px;
 }
@@ -173,15 +172,31 @@ section.banner {
 	border: none;
 	cursor: pointer;
 	color: aliceblue;
-	box-shadow: 0 5px #999;
+	box-shadow: 3px 3px 1px #999;
 }
 .pirk:hover {
-	background-color: #24e42b
+	background-color: #24e42b;
 }
 .pirk:active {
 	background-color: #3e8e41;
-	box-shadow: 0 5px #666;
+	box-shadow: 3px 3px 1px #666;
 	transform: translateY(3px);
+  }
+  #clock {
+	text-align: center;
+	font-size: 60px;
+	background-color: black;
+	color: #08c918;
+	max-width: 70vh;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10px;
+	padding: 15px 20px;
+  }
+  .seeu {
+	  color: #08c918;
+	  font-size: 45px;
+	  text-shadow: 2px 2px 4px #000000;
   }
 /*Alexo code end here*/
 
