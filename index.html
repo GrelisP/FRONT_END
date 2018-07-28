@@ -22,7 +22,11 @@
 						</button>
 						<div class="dropdown-content">
 						<ul>
+<<<<<<< HEAD
+						  <li><a href="#">Speaker's</a></li>
+=======
 						  <li><a href="#">Speakers</a></li>
+>>>>>>> 8a0ca5738ebfd55486e1a009c17086541a9ea8ea
 						  <li><a href="#">Shedule</a></li>
 						  <li><a href="#">Contests &amp; Events</a></li>
 						</ul>
@@ -60,6 +64,28 @@
 		<!--Alex code begins here-->
 		<section class="count">
 			<div class="wrappy">
+				<div class="seeu">See you in...</div>
+				<div id="clock">
+					<script>
+						var countDownDate = new Date("Sep 9, 2018 09:00:00").getTime();
+						var x = setInterval(function () {
+							var now = new Date().getTime();
+							var distance = countDownDate - now;
+							var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+							var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+							var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+							var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+							document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+								+ minutes + "m " + seconds + "s ";
+
+							if (distance < 0) {
+								clearInterval(x);
+								document.getElementById("clock").innerHTML = "RIGHT NOW!";
+							}
+						}, 1000);
+					</script>
+				</div>
 				<button class="pirk">
 					BUY NOW!
 				</button>
@@ -174,10 +200,7 @@
 				</div>
 				<a id="up" href="#" title="go up"><img src="icons/up3.png"></a>
 			</div>			
-				Powered by Team One CODE. All copyrights reserved.
-				<p>
-					aslkdjaslkdjalskjdlksajdalsdj
-				</p>					
+				Powered by Team One CODE. All copyrights reserved.				
 		</footer>
 		<!--Povilas footer end-->		
 	</body>
