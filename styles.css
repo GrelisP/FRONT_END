@@ -197,12 +197,12 @@ section.banner {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	min-height: 300px;
-	padding-left: 5%;
+
 }
 
 .second-section .flex-container {	
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   /* This part makes it responsive*/
   flex-wrap: wrap;
 }
@@ -218,6 +218,7 @@ section.banner {
 
 .second-section h2 {
 	margin: 0px;
+	text-align: center;
 }
 
 .second-section img {
