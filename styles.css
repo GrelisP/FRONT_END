@@ -241,41 +241,7 @@ section.banner {
 }
 /* Titas CSS section end*/
 
-/*povilas footer start*/
-footer{
-	text-align: center;
-	box-sizing: border-box;	
-	background-color:  rgb(136, 167, 163);
-	min-height: 70px;
-	background: linear-gradient(to bottom right, #888DA7, rgb(136, 167, 163));
-	border-bottom: 1.5px solid black;	
-}
 
-footer a{
-	float:right;
-	margin-right: 20px;
-}
- .social-container{
-	display:flex;	
-	justify-content: center;	
-	padding-bottom: 10px;
-}
-
-footer img{
-	height: 32px;
-}
-
-.social-container a:hover{
-	background-color: white;	
-	transition-duration: 0.4s;
-	border-radius: 2px;
-}
-
-#up img{
-	height: 10px;
-}
-
-/*Povilas form end*/
 .form{
 	background-color:  #888DA7;	
 }
@@ -376,6 +342,41 @@ textarea{
 	padding-left: 5%;
 	width: 50%;
 	
-	
 }
 /*Povilas form end*/
+
+/*povilas footer start*/
+footer{
+	text-align: center;
+	box-sizing: border-box;	
+	background-color:  rgb(136, 167, 163);
+	min-height: 70px;
+	background: linear-gradient(to bottom right, #888DA7, rgb(136, 167, 163));
+	border-bottom: 1.5px solid black;	
+}
+
+footer a{
+	float:right;
+	margin-right: 20px;
+}
+ .social-container{
+	display:flex;	
+	justify-content: center;	
+	padding-bottom: 10px;
+}
+
+footer img{
+	height: 32px;
+}
+
+.social-container a:hover{
+	background-color: white;	
+	transition-duration: 0.4s;
+	border-radius: 2px;
+}
+
+#up img{
+	height: 10px;
+}
+
+/*Povilas footer end*/
