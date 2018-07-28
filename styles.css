@@ -9,7 +9,11 @@ header{
 	min-height: 50px;
 	width: 100%;
 	font-size: .85em;
-	padding-left: 2%;
+	
+}
+ 
+nav{
+	margin-left:5%;
 }
 
 .fixedm {
@@ -20,6 +24,8 @@ nav ul {
 	max-width: 50%;
     display: flex;
 	justify-content: space-between;
+	
+	border: 1px solid red;
 
 	
 }
@@ -31,6 +37,9 @@ nav li>a, .dropbtn {
 }
 nav li {
 	list-style: none;
+	border: 1px solid red;
+	margin-left:auto;
+
 }
 
 /*Dropdown menu*/
