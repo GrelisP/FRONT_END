@@ -234,6 +234,19 @@ section.banner {
 	margin-bottom: 15px;
 }
 
+#author {
+	display: block;
+	margin-bottom: 15px;
+	color:grey;
+	font-size: 70%;
+}
+
+#author-name {
+	color:white;
+	display: inline;
+}
+
+
 .second-section .last-paragraph {
 	display: block;
 	margin-top: 15px;
