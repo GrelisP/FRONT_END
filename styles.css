@@ -237,11 +237,25 @@ section.banner {
 	margin-bottom: 15px;
 }
 
+#author {
+	display: block;
+	margin-bottom: 15px;
+	color:grey;
+	font-size: 70%;
+}
+
+#author-name {
+	color:white;
+	display: inline;
+}
+
+
 .second-section .last-paragraph {
 	display: block;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
+<<<<<<< HEAD
 
 @media only screen and(max-width:750px){
 	.second-section {		
@@ -250,6 +264,55 @@ section.banner {
 }
 
 /* Titas CSS section end*/
+=======
+/* Titas CSS section end*/
+/* Titas CSS blog start*/
+.second-section-blog {
+	background-color: #7EA2AA;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	min-height: 300px;
+}
+
+.second-section-blog .flex-container {	
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.second-section-blog p {
+
+	border-radius: 5px;
+	box-shadow: 5px 10px 18px #888888;
+	background-color: #DCDCDC;	
+	padding: 1%;
+}
+
+.second-section-blog h2 {
+	margin: 0px;
+	text-align: center;
+}
+
+.second-section-blog img {
+    float: left;
+    width: 150px;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.second-section-blog strong, .second-section-blog span {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.second-section-blog .last-paragraph {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+/* Titas CSS blog end*/
+>>>>>>> 900ffc0ac607e295903c4a7030fd3442810fcdf3
 /*Povilas form start*/
 .form{
 	background-color:  #7EA2AA;	
