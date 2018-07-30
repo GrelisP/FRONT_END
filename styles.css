@@ -255,7 +255,6 @@ section.banner {
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
-<<<<<<< HEAD
 
 @media only screen and(max-width:750px){
 	.second-section {		
@@ -264,7 +263,6 @@ section.banner {
 }
 
 /* Titas CSS section end*/
-=======
 /* Titas CSS section end*/
 /* Titas CSS blog start*/
 .second-section-blog {
@@ -312,7 +310,6 @@ section.banner {
 	margin-bottom: 0px;
 }
 /* Titas CSS blog end*/
->>>>>>> 900ffc0ac607e295903c4a7030fd3442810fcdf3
 /*Povilas form start*/
 .form{
 	background-color:  #7EA2AA;	
