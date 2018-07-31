@@ -255,13 +255,6 @@ section.banner {
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
-
-@media only screen and(max-width:750px){
-	.second-section {		
-		border: 2px solid red;
-	}
-}
-
 /* Titas CSS section end*/
 /* Titas CSS section end*/
 /* Titas CSS blog start*/
@@ -310,12 +303,14 @@ section.banner {
 	margin-bottom: 0px;
 }
 /* Titas CSS blog end*/
+
+
+
 /*Povilas form start*/
 .form{
 	background-color:  #7EA2AA;	
 	padding: 5% 0;
 }
-
 .question_form{		
 	display: flex;
 	justify-content: space-between;	
@@ -325,9 +320,8 @@ label, input, textarea, select {
 	box-sizing: border-box;
 	display: block;
 	width: 45%;
-	margin-left: 0px;
+	margin-left: 0px;	
 }
-
 input, select, textarea{
 	background-color: rgba(0, 0, 0, 0.048);
 	border: none;
@@ -336,26 +330,57 @@ input, select, textarea{
 }
 
 input{
-	font-size: 12px;	
-	height: 20px;
-	
+	font-size: 17px;	
+	height: 20px;	
 }
 label{
 	font-size: 15px;
 	padding-top: 10px;
-	white-space: nowrap;
+	white-space: nowrap;	
 }
-
 textarea{
 	min-height: 50px;	
 	resize: none;
 }
 
 .right, .left{
-	width: 50%;
-	padding:0% 5%;
+	width: 39%;
+	padding:2.5% 5%;	
+}
+.left{
+	padding-right: 0;
+	width:44%;	
+}
+.right{	
+	background:linear-gradient(to bottom,rgba(136, 141, 167, 0.699), rgba(126, 162, 170, 0.164));
+	margin-right: 5%;	
+	padding-right: 0;		
+	box-shadow: 1px 1px 7px #646464;
+	max-height: 315.892px;
+	margin-top:43.92px;
+}
+.right h2{
+	padding-top:28px;
 }
 
+.right input{	
+	max-width:200px;	
+	margin-top: 27px;
+	height: 20px;	 
+}
+.right input:focus{
+	background-color: white;
+	color:black;		
+}
+.right label{
+	padding:29px 0px 2px 0px;	
+}
+
+.cBTN:hover{
+	background-color: white;
+	color:black;
+	transition-duration: 1s;
+}
 .cBTN{
 	height: 20px;
 	background-color: rgb(136, 148, 167);
@@ -367,53 +392,41 @@ textarea{
 	margin-bottom: 20px;
 }
 
-.right input{
-	height:  20px;
-	background-color: #888DA7;
-	border-style: none;
-	color: #DCDCDC;
-	max-width:120px;	
-	border-left: 1px solid rgb(126, 124, 124);
-	border-right: 1px solid rgb(126, 124, 124);
-}
-.right input:focus{
-	background-color: white;
-	color:black;		
-}
-
-.cBTN:hover{
-	background-color: white;
-	color:black;
-	transition-duration: 1s;
-}
-
-.right{
-	background-color: rgb(110, 111, 116);
-	padding-right: 0;	
-	margin-right: 5%;	
-	
-}
-
 @media only screen and (max-width:750px){
 	.question_form{
 		flex-direction: column;
 		align-items: center;
-		box-sizing: border-box;
-		padding:2.5% 0%;
-	}		
+		box-sizing: border-box;			
+	}
+
 	.left{
 		min-width: 90%;	
 		padding: 0;
 	}	
 	.right{
-		width: 85%;
+		display: flex;	
+		justify-content: space-around;	
+		flex-wrap: wrap;
+		width: 90%;
 		margin-right:0;
+		padding-left: 0px;	
+		min-height: 80px;	
 	}
+	
 	.question_form h2, .right input{
-		text-align: center;		
+		text-align: center;	
+		padding: 0px 5px;	
+	}	
+	.right h2{
+		padding-top:2px;
+	}	
+	#subscribeBtn{
+		width: 93px;
+	}		
+	.right label{
+		display: none;
 	}	
 }
-
 
 /*Povilas form end*/
 /*povilas footer start*/
@@ -422,32 +435,24 @@ footer{
 	box-sizing: border-box;	
 	background-color:  rgb(136, 167, 163);
 	min-height: 70px;
-	background: linear-gradient(to bottom, #7EA2AA, #888DA7);
-	border-bottom: 1.5px solid black;
-	padding-bottom: 1%;
+	background: linear-gradient(to bottom, #7EA2AA, rgba(136, 141, 167, 0.808));
+	border-bottom: 1.5px solid black;	
 }
-
  .social-container{
 	display:flex;	
-	justify-content: center;	
-	padding-top: 1%;
+	justify-content: center;
 }
-
 footer img{
 	height: 32px;
 }
-
 .social-container a:hover{
 	background-color: white;	
 	transition-duration: 0.4s;
 	border-radius: 2px;
 }
-
 #up img{
-	height: 10px;
+	height: 15px;
 	display: block;
-	margin-left: 95%;
-	padding-bottom: 5px;
+	margin:0% 0% 1.5% 95%;	
 }
-
 /*Povilas footer end*/
