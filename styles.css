@@ -466,40 +466,60 @@ textarea{
 
 /*Povilas form end*/
 /*povilas speakers start*/
+.speakers{
+	background-color: #888DA7;	
+	padding: 5% 0;
+}
+
+.speakers_wrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+
 .speakers_container {
 	display: flex;	
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
-	margin: 0 auto;
-	width: 90%;
+	
+	
+	
 }
 
-.speakers_container:after {
-	content: "";			
-	flex: auto;
-}
+
+
+
 
 .filterDiv img{
-	width:150px;
+	width: 146px;
 	height: 150px;
+	
+	border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+	transform: scale(0.9 0.9) ;
 }
 
 .filterDiv {
     width: 150px;    
-    text-align: center;
-    margin: 5px;
-    display: none;
+    text-align: center;    
+	display: none;	
+	transition: transform .2s; /* Animation */ 
+	margin:5px 10px 5px 0px;   
+	border: 2px solid rgba(145, 57, 57, 0.384);
+	border-radius: 2px;
+	background-color: rgba(145, 57, 57, 0.11);
+	max-height: 180px;
+	box-sizing: border-box;
+	align-items: flex-start;	
+	cursor: crosshair;
+	
 }
 
-.filterDiv p{
-	background-color: #303633;
-	margin: 0;	
-
-}
-
+.filterDiv img:hover{ 
+	width: 146PX;
+}	
 .filterDiv:hover{
-	background-color: #000000;
+	background-color:rgba(124, 39, 39, 0.733);
 	color:white;
+	transform: scale(1.5); 		
 }
 
 /* The "show" class is added to the filtered elements */
@@ -525,8 +545,32 @@ textarea{
 .btn.active {
   background-color: #666;
   color: white;
+  margin-right: 79.497px;
 }
 
+.btn.active {
+	background-color: #666;
+	color: white;
+  }
+  .btn.active {
+	background-color: #666;
+	color: white;
+  }
+
+  .btn.active {
+	background-color: #666;
+	color: white;
+  }
+
+  .btn.active {
+	background-color: #666;
+	color: white;
+  }
+
+ .btnContainer{
+	padding-bottom: 5%;	
+ }
+  
 
 /*povilas speakers end*/
 /*povilas footer start*/
@@ -535,7 +579,7 @@ footer{
 	box-sizing: border-box;	
 	background-color:  rgb(136, 167, 163);
 	min-height: 70px;
-	background: linear-gradient(to bottom, #7EA2AA, rgba(136, 141, 167, 0.808));
+	background: linear-gradient(to bottom, rgba(160, 13, 13, 0.26) , rgba(136, 141, 167, 0.808));
 	border-bottom: 1.5px solid black;	
 }
  .social-container{
