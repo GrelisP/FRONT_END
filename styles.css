@@ -26,7 +26,6 @@ nav li{
 nav ul > li:first-child {
 	border-top: #7EA2AA solid 1px;
 }
-
 nav li a, .dropbtn {
 	color: #bbb;
 	text-decoration: none;
@@ -69,7 +68,6 @@ nav a:hover, .dropdown:hover .dropbtn {
 		min-height: 50px;
 		width: 100%;
 		font-size: 100%;
-		
 	}
 	.fixedm {
 		display: inherit;
@@ -93,9 +91,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 	.fas, .fa {
 		display: initial;
 	}
-	
 	/*Dropdown menu*/
-	
 	.dropdown-content a {
 		float: none;
 		color: #bbb;
@@ -117,6 +113,9 @@ nav a:hover, .dropdown:hover .dropbtn {
 	}
 	.dropdown-content ul > li:first-child {
 		margin-top: 10px;
+	}
+	.dropdown:hover {
+		background-color: unset;
 	}
 }
 
