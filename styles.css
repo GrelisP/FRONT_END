@@ -316,7 +316,46 @@ section.banner {
 }
 /* Titas CSS blog end*/
 
+/* Hamzat's About css starts here*/
+section.video {
+	background-color: #000000;
+	height: 500px;
+	margin-bottom: auto;
+}
 
+.video-container {
+	width: 600px;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+section.about-us {
+	background-color: #000000;
+	height: 700px;
+	
+}
+
+section.about-us div.text-wrapper {
+	width: 600px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.text-wrapper h3 {
+	color: white;
+	margin-top: 0;
+}
+
+.text-wrapper p {
+	color: white;
+	text-align:  justify;
+}
+/* Hamzat's About css starts here*/
 
 /*Povilas form start*/
 .form{
