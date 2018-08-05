@@ -251,6 +251,11 @@ section.banner {
 	display: inline;
 }
 
+.second-section .first-paragraph {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
 
 .second-section .last-paragraph {
 	display: block;
