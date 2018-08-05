@@ -68,25 +68,38 @@ nav a:hover, .dropdown:hover .dropbtn {
 		position: fixed;
 		min-height: 50px;
 		width: 100%;
-		font-size: .85em;
+		font-size: 100%;
+		
 	}
 	.fixedm {
+		display: inherit;
 		min-height: 50px;
 		background-color: #7EA2AA
 	}
+	nav {
+		margin: 0 5%;
+	}
 	nav ul {
-		max-width: 80%;
-		display: flex;
-		justify-content: space-between;
+		margin: 5px;
 	}
-	nav ul li {
+	nav ul > li:first-child {
+		border-top: none;
+	}
+	nav ul li, .dropdown {
 		border: none;
+		display: inline-block;
+		width: 13%;
 	}
+	.fas, .fa {
+		display: initial;
+	}
+	
 	/*Dropdown menu*/
+	
 	.dropdown-content a {
 		float: none;
 		color: #bbb;
-		padding: 12px 16px;
+		padding: 10px;
 		text-decoration: none;
 		display: block;
 		text-align: center;
@@ -98,6 +111,12 @@ nav a:hover, .dropdown:hover .dropbtn {
 		font: inherit;
 		display: inline;
 		padding: 0;
+	}
+	.dropdown-content li {
+		display: initial;
+	}
+	.dropdown-content ul > li:first-child {
+		margin-top: 10px;
 	}
 }
 
