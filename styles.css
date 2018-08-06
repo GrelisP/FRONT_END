@@ -334,41 +334,51 @@ section.banner {
 
 /* Hamzat's About css starts here*/
 section.video {
-	background-color: #000000;
-	height: 500px;
-	margin-bottom: auto;
+	background-color: #7EA2AA;
+	height: 550px;
+	padding-top: 120px;
+	
 }
 
 .video-container {
-	width: 600px;
-	padding-top: 40px;
+	position: relative;
+    width: 53.5%;
+    height: 0;
+	padding-bottom: 30%;
 	margin: 0 auto;
+	
 }
 
 iframe {
-	display: block;
-	margin: 0 auto;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 section.about-us {
-	background-color: #000000;
+	background-color: #7EA2AA;
 	height: 700px;
 	
 }
 
 section.about-us div.text-wrapper {
-	width: 600px;
+	width: 45%;
 	margin: 0 auto;
-	padding: 10px 0;
+	padding: 20px 20px;
+	background-color: #DCDCDC;
+	border-radius: 20px;
+	box-shadow: 5px 10px 18px #888888;
 }
 
 .text-wrapper h3 {
-	color: white;
+	color: #000000;
 	margin-top: 0;
 }
 
 .text-wrapper p {
-	color: white;
+	color: #000000;
 	text-align:  justify;
 }
 /* Hamzat's About css starts here*/
