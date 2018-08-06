@@ -381,7 +381,98 @@ section.about-us div.text-wrapper {
 	color: #000000;
 	text-align:  justify;
 }
-/* Hamzat's About css starts here*/
+/* Hamzat's About css ends here*/
+
+/* Hamzat's contact css starts here*/
+
+section.contact-us {
+	height: 700px;
+	background-image: linear-gradient(to right bottom, #7ea2aacc, #8be8cbcc), url("contact-us.jpg");
+	background-size: cover; 
+}
+
+.c-wrapper{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	padding: 0 20px;
+  }
+   
+  .contact-form{
+	display: flex;
+	max-width: 550px;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.8);
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+   
+  .input-fields{
+	display: flex;
+	flex-direction: column;
+	margin-right: 4%;
+  }
+   
+  .input-fields,
+  .msg-c{
+	width: 48%;
+  }
+   
+  .input-fields .input,
+  .msg-c textarea{
+	margin: 10px 0;
+	background: transparent;
+	border: 0px;
+	border-bottom: 2px solid #c5ecfd;
+	padding: 10px;
+	color: #c5ecfd;
+	width: 100%;
+  }
+   
+  .msg-c textarea{
+	height: 212px;
+  }
+   
+  .input-fields input::placeholder {
+  
+	color: #c5ecfd;
+  }
+  
+  .msg-c textarea::placeholder {
+  
+	  color: #c5ecfd;
+	}
+   
+  .btn-c {
+	  background: #39b7dd;
+	  text-align: center;
+	  padding: 15px;
+	  border-radius: 5px;
+	  color: #fff;
+	  cursor: pointer;
+	  text-transform: uppercase;
+  }
+   
+  @media screen and (max-width: 600px){
+	.c-wrapper{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.contact-form{
+	  flex-direction: column;
+	}
+	.msg-c textarea{
+	  height: 80px;
+	}
+	.input-fields,
+	.msg-c{
+	  width: 100%;
+	}
+  }
+
+/* Hamzat's contact css ends here*/
 
 /*Povilas form start*/
 .form{
