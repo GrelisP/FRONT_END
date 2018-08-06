@@ -91,6 +91,9 @@ nav a:hover, .dropdown:hover .dropbtn {
 	.fas, .fa {
 		display: initial;
 	}
+	.dropdown {
+		margin-right: 50%;
+	}
 	/*Dropdown menu*/
 	.dropdown-content a {
 		float: none;
