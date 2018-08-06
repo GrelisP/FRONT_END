@@ -333,34 +333,29 @@ section.banner {
 /* Titas CSS blog end*/
 
 /* Hamzat's About css starts here*/
-section.video {
+section.about-us {
 	background-color: #7EA2AA;
-	height: 550px;
-	padding-top: 120px;
-	
+	height: 100%;
 }
 
 .video-container {
-	position: relative;
-    width: 53.5%;
-    height: 0;
-	padding-bottom: 30%;
+	width: 60%;
 	margin: 0 auto;
-	
+	padding: 100px 0 0;
+	margin-bottom: 80px;
 }
 
-iframe {
+.v-responsive{
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.v-responsive iframe {
 	position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-}
-
-section.about-us {
-	background-color: #7EA2AA;
-	height: 700px;
-	
 }
 
 section.about-us div.text-wrapper {
@@ -380,6 +375,19 @@ section.about-us div.text-wrapper {
 .text-wrapper p {
 	color: #000000;
 	text-align:  justify;
+}
+
+@media screen and (max-width: 600px){
+	.video-container {
+		width: 90%;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	section.about-us div.text-wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 /* Hamzat's About css ends here*/
 
