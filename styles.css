@@ -7,6 +7,7 @@ body {
 header {
 	background: #7EA2AA;
 	position: unset;
+	z-index: 1;
 }
 .fixedm {
 	display: none;
@@ -336,6 +337,7 @@ section.banner {
 section.about-us {
 	background-color: #7EA2AA;
 	height: 100%;
+	
 }
 
 .video-container {
@@ -343,6 +345,7 @@ section.about-us {
 	margin: 0 auto;
 	padding: 100px 0 0;
 	margin-bottom: 80px;
+	
 }
 
 .v-responsive{
@@ -350,12 +353,14 @@ section.about-us {
 	height: 0;
 	padding-bottom: 56.25%;
 	position: relative;
+	
 }
 
 .v-responsive iframe {
 	position: absolute;
     width: 100%;
-    height: 100%;
+	height: 100%;
+	
 }
 
 section.about-us div.text-wrapper {
