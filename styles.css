@@ -7,6 +7,7 @@ body {
 header {
 	background: #7EA2AA;
 	position: unset;
+	z-index: 1;
 }
 .fixedm {
 	display: none;
@@ -333,33 +334,32 @@ section.banner {
 /* Titas CSS blog end*/
 
 /* Hamzat's About css starts here*/
-section.video {
+section.about-us {
 	background-color: #7EA2AA;
-	height: 550px;
-	padding-top: 120px;
+	height: 100%;
 	
 }
 
 .video-container {
-	position: relative;
-    width: 53.5%;
-    height: 0;
-	padding-bottom: 30%;
+	width: 60%;
 	margin: 0 auto;
+	padding: 100px 0 0;
+	margin-bottom: 80px;
 	
 }
 
-iframe {
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.v-responsive{
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+	
 }
 
-section.about-us {
-	background-color: #7EA2AA;
-	height: 700px;
+.v-responsive iframe {
+	position: absolute;
+    width: 100%;
+	height: 100%;
 	
 }
 
@@ -381,47 +381,52 @@ section.about-us div.text-wrapper {
 	color: #000000;
 	text-align:  justify;
 }
+
+@media screen and (max-width: 600px){
+	.video-container {
+		width: 90%;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	section.about-us div.text-wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
 /* Hamzat's About css ends here*/
 
 /* Hamzat's contact css starts here*/
 
 section.contact-us {
-	height: 700px;
+	padding: 50px 0;
 	background-image: linear-gradient(to right bottom, #7ea2aacc, #8be8cbcc), url("contact-us.jpg");
 	background-size: cover; 
 }
 
-.c-wrapper{
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 100%;
-	padding: 0 20px;
-  }
-   
-  .contact-form{
+.contact-form{
 	display: flex;
 	max-width: 550px;
 	margin: 0 auto;
 	background: rgba(0,0,0,0.8);
 	padding: 30px;
-	border-radius: 5px;
+	border-radius: 15px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  }
+}
    
-  .input-fields{
+.input-fields{
 	display: flex;
 	flex-direction: column;
 	margin-right: 4%;
-  }
+}
    
-  .input-fields,
-  .msg-c{
+.input-fields,
+.msg-c{
 	width: 48%;
-  }
+}
    
-  .input-fields .input,
-  .msg-c textarea{
+.input-fields .input,
+.msg-c textarea{
 	margin: 10px 0;
 	background: transparent;
 	border: 0px;
@@ -429,48 +434,46 @@ section.contact-us {
 	padding: 10px;
 	color: #c5ecfd;
 	width: 100%;
-  }
+}
    
-  .msg-c textarea{
+.msg-c textarea{
 	height: 212px;
-  }
+}
    
-  .input-fields input::placeholder {
-  
+.input-fields input::placeholder {
 	color: #c5ecfd;
-  }
+}
   
-  .msg-c textarea::placeholder {
-  
-	  color: #c5ecfd;
-	}
+.msg-c textarea::placeholder {  
+	color: #c5ecfd;
+}
    
-  .btn-c {
-	  background: #39b7dd;
-	  text-align: center;
-	  padding: 15px;
-	  border-radius: 5px;
-	  color: #fff;
-	  cursor: pointer;
-	  text-transform: uppercase;
-  }
+.btn-c {
+	background: #39b7dd;
+	text-align: center;
+	padding: 15px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
    
-  @media screen and (max-width: 600px){
-	.c-wrapper{
-		width: 80%;
-		margin: 0 auto;
+@media screen and (max-width: 600px){
+section.contact-us {
+	padding: 10px;
+}
+.contact-form{
+	flex-direction: column;
+	
+}
+.msg-c textarea{
+	height: 80px;
+}
+.input-fields,
+.msg-c{
+	width: 100%;
 	}
-	.contact-form{
-	  flex-direction: column;
-	}
-	.msg-c textarea{
-	  height: 80px;
-	}
-	.input-fields,
-	.msg-c{
-	  width: 100%;
-	}
-  }
+}
 
 /* Hamzat's contact css ends here*/
 
