@@ -637,7 +637,6 @@ textarea{
 	margin:5px 10px 5px 0px;   
 	border: 2px solid rgba(145, 57, 57, 0.384);
 	border-radius: 2px;
-	background-color: rgba(145, 57, 57, 0.11);
 	max-height: 180px;
 	box-sizing: border-box;
 	align-items: flex-start;	
@@ -673,31 +672,54 @@ textarea{
   background-color: #ddd;
 }
 
-/* Add a dark background to the active button */
+/* Add a background to the filter buttons */
 .btn.active {
   background-color: #666;
   color: white;
   margin-right: 79.497px;
 }
 
-.btn.active {
-	background-color: #666;
+.btn.al {
+	background-color: rgb(100, 41, 41);
 	color: white;
   }
-  .btn.active {
-	background-color: #666;
-	color: white;
-  }
-
-  .btn.active {
-	background-color: #666;
+  .btn.eh {
+	background-color: rgb(26, 26, 58);
 	color: white;
   }
 
-  .btn.active {
-	background-color: #666;
+  .btn.bc {
+	background-color: rgb(63, 17, 63);
 	color: white;
   }
+
+  .btn.cs {
+	background-color:rgb(80, 80, 12);
+	color: white;
+  }
+
+  /*add background for speaker cards*/
+  .filterDiv.al{
+	  background-color:rgb(100, 41, 41)
+  }
+
+  .filterDiv.eh{
+	background-color:rgb(26, 26, 58)
+}
+
+.filterDiv.bc{
+	background-color: rgb(63, 17, 63)
+}
+
+.filterDiv.cs{
+	background-color:rgb(80, 80, 12);
+}
+
+.filterDiv.bc.cs{
+	background: linear-gradient(180deg,rgb(63, 17, 63) 90%,rgb(80, 80, 12) 10% )
+	}
+
+
 
  .btnContainer{
 	padding-bottom: 5%;	
