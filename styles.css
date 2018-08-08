@@ -204,6 +204,46 @@ section.banner {
 	  font-size: 45px;
 	  text-shadow: 2px 2px 4px #000000;
   }
+
+  .gallery {
+	display: flex;
+	padding: 0 4px;
+	justify-content: center;
+  }
+
+  .column {
+	flex: 25%;
+	max-width: 20%;
+	padding: 0 4px;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	height: 33%;
+  }
+
+  .galerija {
+	background-color: #7EA2AA;
+	padding-top: 20px;
+	padding-bottom: 20px;
+  }
+
+  .galerija h2 {
+	  text-align: center;
+  }
+
+  @media screen and (max-width: 750px) {
+	.column {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+	.gallery {
+		flex-wrap: wrap;
+	}
+  }
+
 /*Alexo code end here*/
 /* Titas CSS section start*/
 .second-section {

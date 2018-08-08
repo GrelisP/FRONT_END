@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>[Your website title]</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>	
+<body>
+<!-- Aurimas section navigation start-->
+<header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+
+			<li>
+				<div class="dropdown">
+					<button class="dropbtn">Program<i class="fas fa-angle-double-right"></i></button>
+
+					<div class="dropdown-content">
+						<ul>
+							<li><a href="program.html">Speaker's</a></li>
+							<li><a href="program.html">Shedule</a></li>
+							<li><a href="program.html">Contests &amp; Events</a></li>
+						</ul>
+					</div>
+				</div> 
+			</li>
+
+			<li><a href="#recent-news">Recent news</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="photos.html">Photos</a></li>
+			<li>
+
+				<div class="dropdown">
+					<button class="dropbtn">About<i class="fas fa-angle-double-right"></i></button>
+
+					<div class="dropdown-content">
+						<ul>
+							<li><a href="about.html">Contacts</a></li>
+							<li><a href="about.html">Sponsors &amp; Partners</a></li>
+							<li><a href="about.html">FAQ</a></li>
+							<li><a href="about.html">Policies</a></li>
+						</ul>
+					</div>
+				</div> 
+			</li>
+		</ul>
+	</nav>
+</header>
+	<div class="fixedm"></div>
+<!-- Aurimas section navigation end-->
+
+<!--Hamzat's code starts here
+<section class="banner">
+	<h1><a href="about.html">DEFCON</a></h1>
+</section>
+    Hamzat's code ends here-->
+
+<!--Alex code begins here-->
+<section class="count">
+	<div class="wrappy">
+		<div class="seeu">See you in...</div>
+
+		<div id="clock">
+			<script>
+				var countDownDate = new Date("Sep 9, 2018 09:00:00").getTime();
+				var x = setInterval(function () {
+					var now = new Date().getTime();
+					var distance = countDownDate - now;
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+						+ minutes + "m " + seconds + "s ";
+
+					if (distance < 0) {
+						clearInterval(x);
+						document.getElementById("clock").innerHTML = "RIGHT NOW!";
+					}
+				}, 1000);
+			</script>
+		</div>
+
+		<button class="pirk">BUY NOW!</button>
+	</div>
+</section>
+<!--Alex code ends here-->
+<!-- Titas 2 section start -->
+<section class="galerija">
+    <h2>A Blast From the Past!</h2>
+    <div class="gallery">
+        <div class="column">
+            <img src="photos/def1.jpg" alt="">
+            <img src="photos/def2.jpg" alt="">
+            <img src="photos/def3.jpg" alt="">
+        </div>
+        <div class="column">
+            <img src="photos/def4.jpg" alt="">
+            <img src="photos/def5.jpg" alt="">
+            <img src="photos/def6.jpg" alt="">
+        </div>
+        <div class="column">
+            <img src="photos/def7.jpg" alt="">
+            <img src="photos/def8.jpg" alt="">
+            <img src="photos/def9.jpg" alt="">
+        </div>
+        <div class="column">
+            <img src="photos/def10.jpg" alt="">
+            <img src="photos/def11.jpg" alt="">
+            <img src="photos/def12.jpg" alt="">
+        </div>
+    </div>
+	
+</section>
+<!-- Titas 2 section end -->
+<!--Povilas form start-->
+<section class="form">
+	<form class="question_form">
+		<div class="left">
+			<h2>Questions</h2>
+
+			<label for="i_am">I am:</label>
+			<select name="who" id="i_am">
+				<option value="volunteer">Volunteer</option>
+				<option value="participant">Participant</option>
+				<option value="press">Press</option>
+				<option value="other">Other</option>
+			</select>	
+
+			<label for="first_name">First Name</label>
+			<input type="text" id="first_name">
+
+			<label for="last_name">Last name</label>
+			<input type="text" id="last_name">
+
+			<label for="email">Email</label>
+			<input type="email" id="email">	
+
+			<label for="question">Question</label>				
+			<textarea id="question"></textarea>
+
+			<input id="sendBtn" class="cBTN" type="submit" value="send">		
+		</div>	
+
+		<div class="right">
+			<h2>Newsletter</h2>
+
+			<input id="subscribe" type="text" placeholder="Enter your mail address">
+
+			<input id="subscribeBtn" class="cBTN" type="submit" value="subscribe">	
+		</div>	
+	</form>				
+</section>
+<!--Povilas form end-->
+<!--Povilas footer start-->
+<footer>			
+	<div class="social-container"> 
+		<a href="#" title="Facebook"><img src="icons/f1.png" alt="Facebook"/></a>
+		<a href="#" title="Twiter"><img src="icons/t1.png" alt="Twiter"/></a>
+		<a href="#" title="LinkedIn"><img src="icons/l1.png" alt="LinkedIn"/></a>
+		<a href="#" title="Instagram"><img src="icons/i1.png" alt="Instagram"/></a>
+		<a href="#" title="Youtube"><img src="icons/y1.png" alt="Youtube"/></a>							
+	</div>				
+	<a id="up" href="#" title="go up"><img src="icons/up3.png" alt="GO UP"/></a>		
+		Powered by Team One CODE. All copyrights reserved.					
+</footer>
+<!--Povilas footer end-->		
+</body>
+</html>
