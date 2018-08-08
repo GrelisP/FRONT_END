@@ -375,9 +375,9 @@ section.banner {
 
 /* Hamzat's About css starts here*/
 section.about-us {
-	background-color: #7EA2AA;
+	background-color: #9C7A97;
 	height: 100%;
-	
+	padding-bottom: 80px;
 }
 
 .video-container {
@@ -439,19 +439,18 @@ section.about-us div.text-wrapper {
 /* Hamzat's contact css starts here*/
 
 section.contact-us {
-	padding: 50px 0;
-	background-image: linear-gradient(to right bottom, #7ea2aacc, #8be8cbcc), url("contact-us.jpg");
-	background-size: cover; 
+	padding: 120px 0;
+	background-color: #9C7A97;
 }
 
 .contact-form{
 	display: flex;
 	max-width: 550px;
 	margin: 0 auto;
-	background: rgba(0,0,0,0.8);
+	background: #DCDCDC;
 	padding: 30px;
 	border-radius: 15px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	box-shadow: 5px 10px 18px #888888;
 }
    
 .input-fields{
@@ -470,30 +469,34 @@ section.contact-us {
 	margin: 10px 0;
 	background: transparent;
 	border: 0px;
-	border-bottom: 2px solid #c5ecfd;
+	border-bottom: 2px solid #000000;
 	padding: 10px;
-	color: #c5ecfd;
+	color: #000000;
 	width: 100%;
 }
    
+*:focus{
+	outline: none;
+}
+
 .msg-c textarea{
 	height: 212px;
 }
    
 .input-fields input::placeholder {
-	color: #c5ecfd;
+	color: #000000;
 }
   
 .msg-c textarea::placeholder {  
-	color: #c5ecfd;
+	color: #000000;
 }
    
 .btn-c {
-	background: #39b7dd;
+	background: #9C7A97;
 	text-align: center;
 	padding: 15px;
 	border-radius: 5px;
-	color: #fff;
+	color: #000000;
 	cursor: pointer;
 	text-transform: uppercase;
 }
