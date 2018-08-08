@@ -90,7 +90,7 @@
 
         <!-- Control buttons -->
         <div id="myBtnContainer" class="btnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn active showall" onclick="filterSelection('all')"> Show all</button>
             <button class="btn al" onclick="filterSelection('al')"> AI</button>
             <button class="btn eh" onclick="filterSelection('eh')"> Ethical hacking</button>
             <button class="btn bc" onclick="filterSelection('bc')"> Blockchain</button>
@@ -100,6 +100,7 @@
         <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
         <div class="speakers_container">
             <div class="filterDiv cs"><img src="icons/profile_icons/1.jpg" alt="profile_picture">Name</div>
+            <h1 style="display: none">asdasd</h1>
             <div class="filterDiv al"><img src="icons/profile_icons/2.jpg" alt="profile_picture">Name</div>
             <div class="filterDiv eh"><img src="icons/profile_icons/3.jpg" alt="profile_picture">Name</div>
             <div class="filterDiv cs"><img src="icons/profile_icons/4.jpg" alt="profile_picture">Name</div>
@@ -234,55 +235,56 @@
      
            
             <script>
-                    filterSelection("all")
-                    function filterSelection(c) {
-                      var x, i;
-                      x = document.getElementsByClassName("filterDiv");
-                      if (c == "all") c = "";
-                      for (i = 0; i < x.length; i++) {
-                        RemoveClass(x[i], "show");
-                        if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-                      }
-                    }
-                    
-                    function AddClass(element, name) {
-                      var i, arr1, arr2;
-                      arr1 = element.className.split(" ");
-                      arr2 = name.split(" ");
-                      for (i = 0; i < arr2.length; i++) {
-                        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-                      }
-                    }
-                    
-                    function RemoveClass(element, name) {
-                      var i, arr1, arr2;
-                      arr1 = element.className.split(" ");
-                      arr2 = name.split(" ");
-                      for (i = 0; i < arr2.length; i++) {
-                        while (arr1.indexOf(arr2[i]) > -1) {
-                          arr1.splice(arr1.indexOf(arr2[i]), 1);     
-                        }
-                      }
-                      element.className = arr1.join(" ");
-                    }
-                    
-                    // Add active class to the current button (highlight it)
-                    var btnContainer = document.getElementById("myBtnContainer");
-                    var btns = btnContainer.getElementsByClassName("btn");
-                    for (var i = 0; i < btns.length; i++) {
-                      btns[i].addEventListener("click", function(){
-                        var current = document.getElementsByClassName("active");
-                        current[0].className = current[0].className.replace(" active", "");
-                        this.className += " active";
-                      });
-                    }
-                   
-                    </script>
+
+            //filter script
+            filterSelection("all")
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+                }
+            }
+            
+            function AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                }
+            }
+            
+            function RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+                }
+                element.className = arr1.join(" ");
+            }
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+                });
+            }
+
+        </script>   
+
         </div>
     </div>
 </section>
-
-
 
     
 <section class="shedule">
@@ -294,14 +296,14 @@
     </div>
 </section>
 
-
-
    
 <section class="contests">
     <div class="contests_wrapper">
 
     </div>
 </section>
+
+
 
 <section class="form">
     <form class="question_form">
@@ -340,22 +342,6 @@
             <input id="subscribeBtn" class="cBTN" type="submit" value="subscribe">	
         </div>	
     </form>				
-</section>
-
-<section class="speakers">
-    <div class="speakers_wrapper">
-        <div class="left_fixed">
-            <div class="fixed_wrapper">
-
-            </div>
-        </div>
-
-        <div class="right_free">
-            <div class="free_wrapper">
-
-            </div>
-        </div>
-    </div>
 </section>
 
 <footer>			

@@ -480,7 +480,7 @@ section.contact-us {
 /*Povilas form start*/
 .form{
 	background-color:  #7EA2AA;	
-	padding: 5% 0;
+	padding: 3% 0 5% 0;
 }
 .question_form{		
 	display: flex;
@@ -607,53 +607,49 @@ textarea{
 }
 
 .speakers_wrapper{
-	width: 90%;
+	width: 92%;
 	margin: 0 auto;
 }
 
 .speakers_container {
 	display: flex;	
 	justify-content: flex-start;
-	flex-wrap: wrap;
-	
-	
-	
+	flex-wrap: wrap;	
 }
 
-
-
-
-
 .filterDiv img{
-	width: 146px;
-	height: 150px;
+	max-width: 150px;
+	
 	
 	border-bottom: 1px solid rgba(0, 0, 0, 0.123);
 	transform: scale(0.9 0.9) ;
 }
 
 .filterDiv {
-    width: 150px;    
+	box-sizing: border-box;
+    max-width: 150px;    
     text-align: center;    
 	display: none;	
 	transition: transform .2s; /* Animation */ 
-	margin:5px 10px 5px 0px;   
-	border: 2px solid rgba(145, 57, 57, 0.384);
+	margin:1%;
+	/*margin:5px 10px 5px 0px;   */
+	
 	border-radius: 2px;
 	max-height: 180px;
-	box-sizing: border-box;
-	align-items: flex-start;	
+	box-sizing: border-box;		
 	cursor: crosshair;
-	
+	background-color:rgba(52, 39, 124, 0.212);
 }
 
-.filterDiv img:hover{ 
-	width: 146PX;
-}	
-.filterDiv:hover{
-	background-color:rgba(124, 39, 39, 0.733);
+	
+.filterDiv:hover{	
 	color:white;
-	transform: scale(1.5); 		
+	transform: scale(1.5); 	
+	background-color:rgba(52, 39, 124, 0.712);	
+}
+
+.filterDiv.bc.cs{
+
 }
 
 /* The "show" class is added to the filtered elements */
@@ -668,19 +664,16 @@ textarea{
   padding: 12px 16px;
   background-color: #f1f1f1;
   cursor: pointer;
+  margin: 10px 10px 10px 0;
 }
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-  background-color: #ddd;
+  
 }
 
 /* Add a background to the filter buttons */
-.btn.active {
-  background-color: #666;
-  color: white;
-  margin-right: 79.497px;
-}
+
 
 .btn.al {
 	background-color: rgb(100, 41, 41);
@@ -701,32 +694,23 @@ textarea{
 	color: white;
   }
 
-  /*add background for speaker cards*/
-  .filterDiv.al{
-	  background-color:rgb(100, 41, 41)
+  .btn.active {
+	box-shadow: 5px 10px #00000071;
+	color: red;
+	font-size: 20px;
   }
 
-  .filterDiv.eh{
-	background-color:rgb(26, 26, 58)
-}
-
-.filterDiv.bc{
-	background-color: rgb(63, 17, 63)
-}
-
-.filterDiv.cs{
-	background-color:rgb(80, 80, 12);
-}
-
-.filterDiv.bc.cs{
-	background: linear-gradient(180deg,rgb(63, 17, 63) 90%,rgb(80, 80, 12) 10% )
-	}
-
+  /*add background for speaker cards*/
 
 
  .btnContainer{
 	padding-bottom: 5%;	
+	margin-left:1%;
  }
+
+ /*speakers bio info 
+
+
   
 
 /*povilas speakers end*/
