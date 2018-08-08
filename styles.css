@@ -138,6 +138,7 @@ section.banner {
 	color: white;
 	font-size: 5em;
 	background-color: black;
+	border-radius: 15px;
 	padding: 0 10px;
 }
 
