@@ -375,7 +375,7 @@ section.banner {
 
 /* Hamzat's About css starts here*/
 section.about-us {
-	background-color: #9C7A97;
+	background-color: #7EA2AA;
 	height: 100%;
 	padding-bottom: 80px;
 }
@@ -440,7 +440,7 @@ section.about-us div.text-wrapper {
 
 section.contact-us {
 	padding: 120px 0;
-	background-color: #9C7A97;
+	background-color: #7EA2AA;
 }
 
 .contact-form{
@@ -492,7 +492,7 @@ section.contact-us {
 }
    
 .btn-c {
-	background: #9C7A97;
+	background: #7EA2AA;
 	text-align: center;
 	padding: 15px;
 	border-radius: 5px;
