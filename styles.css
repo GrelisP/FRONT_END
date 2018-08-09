@@ -658,9 +658,7 @@ textarea{
 }
 
 .filterDiv img{
-	max-width: 150px;
-	
-	
+	max-width: 150px;	
 	border-bottom: 1px solid rgba(0, 0, 0, 0.123);
 	transform: scale(0.9 0.9) ;
 }
@@ -671,21 +669,18 @@ textarea{
     text-align: center;    
 	display: none;	
 	transition: transform .2s; /* Animation */ 
-	margin:1%;
-	/*margin:5px 10px 5px 0px;   */
-	
+	margin:1%;	
 	border-radius: 2px;
 	max-height: 180px;
 	box-sizing: border-box;		
 	cursor: crosshair;
-	background-color:rgba(52, 39, 124, 0.212);
 }
 
 	
 .filterDiv:hover{	
 	color:white;
 	transform: scale(1.5); 	
-	background-color:rgba(52, 39, 124, 0.712);	
+	background-color:rgba(39, 39, 43, 0.712);	
 }
 
 .filterDiv.bc.cs{
@@ -697,7 +692,7 @@ textarea{
     display: block;
 }
 
-/* Style the buttons */
+/*buttons style */
 .btn {
   border: none;
   outline: none;
@@ -707,14 +702,12 @@ textarea{
   margin: 10px 10px 10px 0;
 }
 
-/* Add a light grey background on mouse-over */
+/* box shadow for filter buttons */
 .btn:hover {
-  
+  box-shadow: 1px 1px 5px red;
 }
 
-/* Add a background to the filter buttons */
-
-
+/*background to the filter buttons */
 .btn.al {
 	background-color: rgb(100, 41, 41);
 	color: white;
