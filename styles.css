@@ -894,6 +894,9 @@ p.cs, p.al, p.eh, p.bc{
 }
 
 @media (min-width:200px) and (max-width:520px){
+	.speakers_container{
+		justify-content: center;
+	}
 	.modal-left img, .modal-mobile-left, .modal-content span  {
 		margin:0 auto;
 	}
