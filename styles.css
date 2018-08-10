@@ -238,7 +238,8 @@ section.banner {
   @media only screen and (max-width: 750px) {
 	.column {
 	  flex: 50%;
-	  max-width: 50%;
+	  max-width: 95%;	  
+	  margin-top:8px; /*column margin fixzzz*/
 	}
 	.gallery {
 		flex-wrap: wrap;
