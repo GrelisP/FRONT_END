@@ -235,7 +235,7 @@ section.banner {
 	  text-align: center;
   }
 
-  @media screen and (max-width: 750px) {
+  @media only screen and (max-width: 750px) {
 	.column {
 	  flex: 50%;
 	  max-width: 50%;
@@ -503,29 +503,29 @@ section.contact-us {
 }
    
 @media screen and (max-width: 600px){
-section.contact-us {
-	padding: 10px;
-}
-.contact-form{
-	flex-direction: column;
-	
-}
-.msg-c textarea{
-	height: 80px;
-}
-.input-fields,
-.msg-c{
-	width: 100%;
+	section.contact-us {
+		padding: 10px;
 	}
+	.contact-form{
+		flex-direction: column;
+		
+	}
+	.msg-c textarea{
+		height: 80px;
+	}
+	.input-fields,
+	.msg-c{
+		width: 100%;
+		}
 }
 
 /* Hamzat's contact css ends here*/
-
 /*Povilas form start*/
 .form{
 	background-color:  #7EA2AA;	
 	padding: 3% 0 5% 0;
 }
+
 .question_form{		
 	display: flex;
 	justify-content: space-between;	
@@ -537,6 +537,7 @@ label, input, textarea, select {
 	width: 45%;
 	margin-left: 0px;	
 }
+
 input, select, textarea{
 	background-color: rgba(0, 0, 0, 0.048);
 	border: none;
@@ -548,11 +549,13 @@ input{
 	font-size: 17px;	
 	height: 20px;	
 }
+
 label{
 	font-size: 15px;
 	padding-top: 10px;
 	white-space: nowrap;		
 }
+
 textarea{
 	min-height: 50px;	
 	resize: none;
@@ -562,10 +565,12 @@ textarea{
 	width: 39%;
 	padding:2.5% 5%;	
 }
+
 .left{
 	padding-right: 0;
 	width:44%;	
 }
+
 .right{	
 	background:linear-gradient(to bottom,rgba(136, 141, 167, 0.699), rgba(126, 162, 170, 0.164));
 	margin-right: 5%;	
@@ -574,6 +579,7 @@ textarea{
 	max-height: 315.892px;
 	margin-top:43.92px;
 }
+
 .right h2{
 	padding-top:28px;
 }
@@ -583,10 +589,12 @@ textarea{
 	margin-top: 27px;
 	height: 20px;	 
 }
+
 .right input:focus{
 	background-color: white;
 	color:black;		
 }
+
 .right label{
 	padding:29px 0px 2px 0px;	
 }
@@ -596,6 +604,7 @@ textarea{
 	color:black;
 	transition-duration: 1s;
 }
+
 .cBTN{
 	height: 20px;
 	background-color: rgb(136, 148, 167);
@@ -646,8 +655,9 @@ textarea{
 /*Povilas form end*/
 /*povilas speakers start*/
 .speakers{
-	background-color: #888DA7;	
+	background-color: #7EA2AA;	
 	padding: 5% 0;
+	min-height: 800px;
 }
 
 .speakers_wrapper{
@@ -661,7 +671,7 @@ textarea{
 	flex-wrap: wrap;	
 }
 
-.filterDiv img{
+.filterDiv img {
 	max-width: 150px;	
 	border-bottom: 1px solid rgba(0, 0, 0, 0.123);
 	transform: scale(0.9 0.9) ;
@@ -677,18 +687,14 @@ textarea{
 	border-radius: 2px;
 	max-height: 180px;
 	box-sizing: border-box;		
-	cursor: crosshair;
+	cursor: pointer;
+	background-color: #0e611549;
 }
-
 	
 .filterDiv:hover{	
 	color:white;
 	transform: scale(1.5); 	
 	background-color:rgba(39, 39, 43, 0.712);	
-}
-
-.filterDiv.bc.cs{
-
 }
 
 /* The "show" class is added to the filtered elements */
@@ -712,43 +718,35 @@ textarea{
 }
 
 /*background to the filter buttons */
-.btn.al {
+.btn.al, p.al  {
 	background-color: rgb(100, 41, 41);
 	color: white;
-  }
-  .btn.eh {
+}
+.btn.eh, p.eh {
 	background-color: rgb(26, 26, 58);
 	color: white;
-  }
+}
 
-  .btn.bc {
+.btn.bc, p.bc {
 	background-color: rgb(63, 17, 63);
 	color: white;
-  }
+}
 
-  .btn.cs {
+.btn.cs, p.cs{
 	background-color:rgb(80, 80, 12);
 	color: white;
-  }
+}
 
-  .btn.active {
+.btn.active {
 	box-shadow: 5px 10px #00000071;
 	color: red;
 	font-size: 20px;
-  }
+}  
 
-  /*add background for speaker cards*/
-
-
- .btnContainer{
+.btnContainer{
 	padding-bottom: 5%;	
 	margin-left:1%;
- }
-
- /*speakers bio info 
-
-
-  
+} 
 
 /*povilas speakers end*/
 /*povilas footer start*/
@@ -777,5 +775,152 @@ footer img{
 	display: block;
 	margin:0% 0% 1.5% 95%;	
 }
+
 /*Povilas footer end*/
-/*PRROGRAM START*/
+/*test of modals */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    min-height: 400px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/*.speakers_container.modal.modal-content span*/
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+	font-weight: bold;	
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(221, 53, 53);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*contetnt in the modal box*/
+.modal-content img{
+	width: 200px;
+	display: block;
+}
+
+/*modal- left container alignment,styling*/
+.modal-left h2 {
+	font-size: 38px;
+	margin: 0 auto;
+	margin-top:8px;
+}
+
+.modal-left p, .modal-left h3{
+	margin:8px auto;
+}
+
+.modal-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-left, .modal-mobile-left{	
+	display: flex;
+	flex-direction: column;	
+}
+
+.modal-content span{
+	transform: rotate(270deg);
+	min-width: 80px;
+	max-height: 30px;
+	align-self: flex-start;
+	padding:0 17px 10px 0 ;	
+}
+
+/*modal- aligning right container */
+.modal-right {
+	min-width: 50%;
+	text-align: justify;	
+}
+
+.modal-right p {
+	margin:0 20px 26px 40px;
+}
+
+/*modal-padding for topic tags*/
+p.cs, p.al, p.eh, p.bc{
+	padding: 3px 5px;
+}
+
+@media (min-width: 521px) and (max-width:768px){
+	.modal-content{
+		max-height: 400px;
+		overflow-y: auto;
+		flex-direction: column;	
+	}
+
+	.modal-left{		
+		flex-direction: row;
+		width: 100%;
+		min-height:200px;
+	}
+
+	.modal-mobile-left{
+		width: 90%;
+	}	
+	
+	.modal-right p{
+		margin: 15px auto;	
+	}
+	.modal-content span{
+		transform: none;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width:200px) and (max-width:520px){
+	.modal-left img, .modal-mobile-left, .modal-content span  {
+		margin:0 auto;
+	}
+
+	.modal-content{
+		max-height: 400px;
+		overflow-y: auto;
+		flex-direction: column;	
+	}
+
+	.modal-left{		
+		flex-direction: column;
+		width: 100%;
+		min-height:200px;
+	}
+
+	.modal-right{
+		padding-top: 200px;
+	}
+
+	.modal-right p{
+		margin: 15px auto;
+		min-width: 100%;			
+	}
+
+	.modal-content span{
+		transform: none;
+		text-align: center;
+	}
+}
