@@ -61,6 +61,30 @@ nav a:hover, .dropdown:hover .dropbtn {
 .dropdown:hover {
 	background-color: #4d4d4d;
 }
+
+/*povilas nav edit mobile*/
+.nav-logo{
+	font-size: 60px;
+	text-align: center;
+	padding: 40px;
+	font-weight: bold;
+	background-color: #4d4d4d;	
+}
+
+.nav-logo a{
+	text-decoration: none;
+	color:#bbb;
+}
+
+button i{
+	font-size: 8px;
+	transform: rotate(90deg);
+}
+/*povilas nav edit mobile*/
+
+
+
+
 /* Other devices (desctop/laptop/tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	header{
@@ -121,6 +145,60 @@ nav a:hover, .dropdown:hover .dropbtn {
 	.dropdown:hover {
 		background-color: unset;
 	}
+
+
+
+	/*povilas nav edit desktop*/
+
+	nav{
+		height:50px;
+	}
+	.nav-wrapper{
+		width: 90%;
+	}
+
+	nav, nav ul{		
+		display: flex;		
+		justify-content: space-between;
+	}
+
+	.nav-logo{
+		font-size: 30px;		
+		padding: 0px;
+		font-weight: bold;
+		background-color: inherit;
+		text-align: left;
+	}
+
+	nav ul li{
+		white-space: nowrap;
+		width: 60px;
+		margin: 0;
+	}
+
+	nav ul{
+		height: 40px;
+		margin: 0;
+		width: 80%;
+		flex-wrap: nowrap;		
+		align-items: flex-end;
+	}
+
+	nav ul, .nav-logo{
+		align-self: center;
+	}
+
+	nav ul li:last-child{
+		margin-right:0;
+		padding-right: 0px;
+		text-align: right;
+	}
+
+	button i{
+		font-size: 14px;		
+	}
+
+	/*povilas nav edit desktop*/
 }
 
 /*Aurimas end*/
