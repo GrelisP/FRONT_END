@@ -519,17 +519,26 @@ section.about-us div.text-wrapper {
 /* Hamzat's contact css starts here*/
 
 section.contact-us {
-	padding: 120px 0;
+	padding: 0;
 	background-color: #7EA2AA;
+	margin:0;
+}
+
+.contact-us h2 {
+	padding-top: 20px;
+	padding-bottom: 16px;
+	margin: 0;
+	text-align: center;
+
 }
 
 .contact-form{
 	display: flex;
-	max-width: 550px;
-	margin: 0 auto;
+	max-width: 90%;
+	margin: 0% 5%;
 	background: #DCDCDC;
 	padding: 30px;
-	border-radius: 15px;
+	border-radius: 5px;
 	box-shadow: 5px 10px 18px #888888;
 }
    
@@ -583,7 +592,7 @@ section.contact-us {
    
 @media screen and (max-width: 600px){
 	section.contact-us {
-		padding: 10px;
+
 	}
 	.contact-form{
 		flex-direction: column;
@@ -622,21 +631,35 @@ section.policies {
 	font-weight: bold;
 }
 
-@media screen and (max-width: 800px){
-	.policies-wrapper{
-		width: 90%;
-	}
-}
-
-@media screen and (max-width: 500px){
-	.policies-wrapper{
-		width: 100%;
-		border-radius: 0;
-	}
-}
-
-
 /* Hamzat's policy css ends here*/
+
+/* Hamzat's FAQ css starts here*/
+
+section.faq {
+	background-color: #7EA2AA;
+	padding-top: 100px;
+}
+
+.faq-wrapper {
+	
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	line-height: 22px;
+	background-color: #DCDCDC;
+	border-radius: 15px;
+	box-shadow: 5px 10px 18px #888888;
+}
+
+.faq-wrapper span{
+	font-weight: bold;
+}
+
+ul.faq {
+	list-style: none;
+}
+
+/* Hamzat's FAQ css ends here*/
 
 /*Povilas form start*/
 .form{

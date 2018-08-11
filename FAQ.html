@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<title>[Your website title]</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="normalize.css"/>
+  		<link rel="stylesheet" type="text/css" href="styles.css"/>
+	</head>	
+	<body>
+<!-- Aurimas section navigation start-->
+<header>
+	<div class="header-wrapper">        
+		<nav>
+			<div class="nav-logo"><a href="#">DEFCON</a></div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+	
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">Program <i class="fas fa-angle-double-right"></i></button>
+	
+						<div class="dropdown-content dprogram">
+							<ul>
+								<li><a href="program.html">Speaker's</a></li>
+								<li><a href="program.html">Shedule</a></li>
+								<li><a href="program.html">Contests &amp; Events</a></li>
+							</ul>
+						</div>
+					</div> 
+				</li>
+
+				<li>			
+					<div class="dropdown">
+						<button class="dropbtn"><a href="about.html">About<i class="fas fa-angle-double-right"></i></a></button>
+	
+						<div class="dropdown-content dabout">
+							<ul>
+								<li><a href="contact.html">Contacts</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="policies.html">Policies</a></li>
+							</ul>
+						</div>
+					</div> 
+				</li>
+
+				<li><a href="index.html#recent-news">Recent news</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="photos.html">Photos</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+</header>
+	<div class="fixedm"></div>
+<!-- Aurimas section navigation end_Alex code begins here-->
+		<section class="count">
+			<div class="wrappy">
+				<div class="seeu">See you in...</div>
+				<div id="clock">
+					<script>
+						var countDownDate = new Date("Sep 9, 2018 09:00:00").getTime();
+						var x = setInterval(function () {
+							var now = new Date().getTime();
+							var distance = countDownDate - now;
+							var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+							var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+							var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+							var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+							document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+								+ minutes + "m " + seconds + "s ";
+
+							if (distance < 0) {
+								clearInterval(x);
+								document.getElementById("clock").innerHTML = "RIGHT NOW!";
+							}
+						}, 1000);
+					</script>
+				</div>
+				<button class="pirk">
+					BUY NOW!
+				</button>
+			</div>
+		</section>
+
+		<!--Alex code ends here-->
+
+		<!--Hamzat's code starts here-->
+        
+        <section class="faq">
+			<div class="faq-wrapper">
+				<h1>Frequently asked questions about DEF CON</h1>
+				<hr>
+				<div>
+					<h3>
+						What is DEF CON?
+					</h3>
+					<p>
+						DEF CON is one of the oldest continuously running hacker conventions around, and also one of the largest.
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						How did DEF CON start?
+					</h3>
+					<p>
+						Originally started in 1993, it was a meant to be a party for member of <q>Platinum Net</q>, a Fido protocol based hacking network out of Canada. As the main U.S. hub I was helping the Platinum Net organizer (I forget his name) plan a closing party for all the member BBS systems and their users. He was going to shut down the network when his dad took a new job and had to move away. We talking about where we might hold it, when all of a sudden he left early and disappeared. I was just planning a party for a network that was shut down, except for my U.S. nodes. I decided what the hell, I'll invite the members of all the other networks my BBS (A Dark Tangent System) system was a part of including Cyber Crime International (CCI), Hit Net, Tired of Protection (ToP), and like 8 others I can't remember. Why not invite everyone on #hack? Good idea!
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						Where did the name come from?
+					</h3>
+					<p>
+						The short answer is a combination of places. There as a SummerCon in the summer, a HoHoCon in the winter, a PumpCon during Halloween, etc. I didn't want any association with a time of year. If you are a Phreak, or just use your phone a lot you'll notes <q>DEF</q> is #3 on the phone. If you are into military lingo DEF CON is short for <q>Defense Condition</q>. Now being a fan of the movie War Games I took note that the main character, David Lightman, lived in Seattle, as I do, and chose to nuke Las Vegas with W.O.P.R. when given the chance. Well I knew I was doing a con in Vegas, so it all just sort of worked out.
+					</p>
+					<p>
+						There are several resources that will give you an idea of what DEF CON is all about.
+					</p>
+					<p>
+						<ul class="faq">
+							<li><span>DEF CON Press:</span> through the prism of the media</li>
+							<li><span>DEF CON Pics:</span> visual evidence, thousands of pictures, some NSFW</li>
+							<li><span>DEF CON Groups:</span> Local groups that meet</li>
+							<li><span>DEF CON Media archives:</span> Speeches from DC 1 to the present, captured</li>
+							<li><span>Google:</span> always a good research starting point</li>
+							<li>Just remember, DEF CON is what you make of it.</li>
+						</ul>
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						When and where is DEF CON?			
+					</h3>
+					<p>
+						DEF CON is generally in the last week of July or first week of August in Las Vegas. DEF CON 26 will be held August 9th through August 12th at Caesars Palace in Las Vegas. Many people arrive a day early, and many stay a day later.			
+					</p>
+					<p>
+						New in 2018, we are doing a DEF CON [Beta] Event in Beijing, China May 11-13! Check out the Call for Papers!			
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						Isn't there a DEF CON FAQ already?				
+					</h3>
+					<p>
+						Yes, an unofficial one. It's quite humorous, sometimes informative, and DEF CON takes no responsibility for its content. It can be found at <a href="#">http://defcon.stotan.org/faq/</a>			
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						What are the rules of DEF CON?			
+					</h3>
+					<p>
+						Physical violence is prohibited. We don't support illegal drug use. Minors should be accompanied by their parent(s) or guardian(s). Please refrain from doing anything that might jeopardize the conference or attendees such as lighting your hair on fire or throwing lit road flares in elevators. DEF CON Goons are there to answer your questions and keep everything moving. Hotel security is there to watch over their property. Each has a different mission, and it is wise to not anger the hotel people. Please be aware that if you engage in illegal activities there is a large contingency of feds that attend DEF CON. Talking about how you are going to bomb the RNC convention in front of an FBI agent is a Career Limiting Move!
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						Is DEF CON cancelled?			
+					</h3>
+					<p>
+						No.			
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						What is there to do at DEF CON?			
+					</h3>
+					<p>
+						DEF CON is a unique experience for each con-goer. If you google around you'll find dozens of write-ups that will give you an idea of what people have experienced at DEF CON. Trust write-ups more than media articles about the con. Some people play capture the flag 24x7, while many people never touch a computer at DEF CON. Some people see every speech they can, while others miss all speeches. Other activities include contests, movie marathons, scavenger hunts, sleep deprivation, lock picking, warez trading, drunken parties, spot the fed contest, the official music events. Because DEF CON is what the attendees make of it, there are more events than even we are aware of. Half the fun is learning what happened at DEF CON after the fact!			
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						I'm not a hacker, should I go to DEF CON?			
+					</h3>
+					<p>
+						Many people have different definitions of what is a <q>hacker</q>. I would recommend looking at previous years speeches, and write-ups from past attendees - this should give you a good idea if DEF CON is for you. This hacker FAQ might give you some insight into the matter as well. If you do not have any technical interests, DEF CON is probably not for you. Sure there is a lot of socializing you can do, but technology and hacking is the core of the con.			
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						Do criminals go to DEF CON?		
+					</h3>
+					<p>
+						Yes. They also go to high school, college, work in your workplace, and the government. There are also lawyers, law enforcement agents, civil libertarians, cryptographers, and hackers in attendance. Ssshhh. Don't tell anyone.			
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						What are Goons?			
+					</h3>
+					<p>
+						They are the staff at DEF CON. They have many roles including safety, speaker coordination, vendor room coordination, network operations, et cetera... Please try to be helpful to them if they make requests of you. If any goon tells you to move, please do so immediately as there may be safety issues they are attempting to address.			
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						How can I help out or become a Goon?			
+					</h3>
+					<p>
+						The staff at DEF CON has grown organically. All positions have some degree of trust associated with them, so typically new goons are ‘inducted’ by friends of existing goons. There are many random points when goons need help and may ask people for help, generally for helping move stuff or other tasks that don't require high amounts of trust or unsupervised work. Just because you help out doesn't make you a goon. If you really want to be a goon, talk with one and see how much work they actually do (Hint: you may want to enjoy being at DEF CON, not working full-time at it). One year the network group got a new Goon when a networking engineer was needed, and he came to the rescue. The intent behind the goons is not to be elitist, but to have a network of trusted people who can help run the conference - please do not feel upset if you are not chosen to be a goon.			
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						How can I help or participate?			
+					</h3>
+					<p>
+						DEF CON is not a spectator sport! Before the con, during, and after there are chances for you to get involved. Before the con you can read about the contests and maybe sign up for one like Capture the Flag. There are artwork contests for shirts and posters. You can practice your lock pick skills, or just get your laptop all locked down and ready to do battle. Organize your .mp3s. Check out the DEF CON Forums to see what other people are up to. If you want to create your own event, you can do that as well - you will not get official space or sanctions, but virtually every official event at DEF CON started out as an unofficial event.			
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						I would love to see XYZ event, how do I make this happen?		
+					</h3>
+					<p>
+						Virtually all events at DEF CON were conceived by the attendees. The DEF CON forums are a great place for recruiting help for an event you want to put on, and making sure your efforts aren't being duplicated. If it doesn't require resources from DEF CON (space, namely) you generally don't have to ask anyone’s permission. Most events are unofficial until they've been going on for a couple of years. Please let us know if you have an idea for an event, we may help facilitate or promote it. Email [suggestions at DEF CON dot org] to keep us in the loop.			
+					</p>
+				</div>
+				<hr>
+				<div>
+					<h3>
+						How can I speak at DEF CON?			
+					</h3>
+					<p>
+						You can submit a response to our CFP (call for papers). All entries are read and evaluated by a selection committee. We would love to have your submission. The call for papers usually opens in March and closes mid-May.			
+					</p>
+				</div>
+			</div>
+		</secton>
+		  
+		<!--Hamzat's code ends here-->
+		
+		<!--Povilas form start-->
+		<section class="form">
+			<form class="question_form">
+				<div class="left">
+					<h2>Questions</h2>
+
+					<label for="i_am">I am:</label>
+					<select name="who" id="i_am">
+						<option value="volunteer">Volunteer</option>
+						<option value="participant">Participant</option>
+						<option value="press">Press</option>
+						<option value="other">Other</option>
+					</select>	
+
+					<label for="first_name">First Name</label>
+					<input type="text" id="first_name">
+
+					<label for="last_name">Last name</label>
+					<input type="text" id="last_name">
+
+					<label for="email">Email</label>
+					<input type="email" id="email">	
+
+					<label for="question">Question</label>				
+					<textarea id="question"></textarea>
+
+					<input id="sendBtn" class="cBTN" type="submit" value="send">		
+				</div>	
+
+				<div class="right">
+					<h2>Newsletter</h2>
+
+					<input id="subscribe" type="text" placeholder="Enter your mail address">
+
+					<input id="subscribeBtn" class="cBTN" type="submit" value="subscribe">	
+				</div>	
+			</form>				
+		</section>
+		<!--Povilas form end-->
+		<!--Povilas footer start-->
+		<footer >
+			<a class="stickyArrow" id="up" href="#" title="go up"><img src="icons/up3.png" alt="GO UP"></a> 	
+
+			<div class="social-container"> 				
+				<a href="#" title="Facebook"><img src="icons/f1.png" alt="Facebook"></a>
+				<a href="#" title="Twiter"><img src="icons/t1.png" alt="Twiter"></a>
+				<a href="#" title="LinkedIn"><img src="icons/l1.png" alt="LinkedIn"></a>
+				<a href="#" title="Instagram"><img src="icons/i1.png" alt="Instagram"></a>
+				<a href="#" title="Youtube"><img src="icons/y1.png" alt="Youtube"></a>               						
+			</div> 
+			   
+			Powered by Team One CODE. All copyrights reserved.             					
+		</footer>
+		<!--Povilas form_footer end-->	
+	</body>
+</html>
+
+
+
+
+
+
+			
