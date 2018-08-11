@@ -1009,6 +1009,25 @@ p.cs, p.al, p.eh, p.bc{
 	padding: 3px 5px;
 }
 
+.hp h2{
+	margin-left:1%;
+	margin-bottom: 2%;
+	padding: 10px 15px;
+	color: whitesmoke;
+	max-width: 180px;
+	text-align: center;
+	background-color: #4d4d4d;
+}
+
+.hp p{
+	font-size: 19px;
+	margin-left:1%;
+	margin-bottom: 10px;
+	max-width: 310px;
+	
+	
+}
+
 @media (min-width: 521px) and (max-width:768px){
 	.modal-content{
 		max-height: 400px;

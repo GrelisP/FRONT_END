@@ -90,7 +90,10 @@
 <!--Alex code ends here_Povilas form start-->
 <section class="speakers">
     <div class="speakers_wrapper">
-
+        <div class="hp">
+            <h2>Speakers of DEFCON</h2>
+            <p>filter by category which you are interested in:</p>
+        </div>
         <!-- Filter buttons -->
         <div id="myBtnContainer" class="btnContainer">
             <button class="btn active showall" onclick="filterSelection('all')"> Show all</button>
@@ -1406,14 +1409,14 @@
     var btn18 = document.getElementById("myBtn-r");
     var span18 = document.getElementsByClassName("close-r")[0];
     btn18.onclick = function() {
-        modal20.style.display = "block";
+        modal18.style.display = "block";
     }
     span18.onclick = function() {
         modal18.style.display = "none";
     }
     window.addEventListener("click", function(event) {
         if (event.target == modal18) {
-            modal28.style.display = "none";
+            modal18.style.display = "none";
         }
     });
     
