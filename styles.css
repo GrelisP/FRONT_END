@@ -521,6 +521,45 @@ section.contact-us {
 }
 
 /* Hamzat's contact css ends here*/
+
+/* Hamzat's policy css starts here*/
+
+section.policies {
+	background-color: #7EA2AA;
+	padding-top: 100px;
+}
+
+.policies-wrapper {
+	
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	line-height: 22px;
+	background-color: #DCDCDC;
+	border-radius: 15px;
+	box-shadow: 5px 10px 18px #888888;
+}
+
+.policies-wrapper span{
+	font-weight: bold;
+}
+
+@media screen and (max-width: 800px){
+	.policies-wrapper{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.policies-wrapper{
+		width: 100%;
+		border-radius: 0;
+	}
+}
+
+
+/* Hamzat's policy css ends here*/
+
 /*Povilas form start*/
 .form{
 	background-color:  #7EA2AA;	

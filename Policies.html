@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<title>[Your website title]</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="normalize.css"/>
+  		<link rel="stylesheet" type="text/css" href="styles.css"/>
+	</head>	
+	<body>
+		<!-- Aurimas section navigation start-->
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+		
+					<li>
+						<div class="dropdown">
+							<button class="dropbtn">Program<i class="fas fa-angle-double-right"></i></button>
+		
+							<div class="dropdown-content">
+								<ul>
+									<li><a href="program.html">Speaker's</a></li>
+									<li><a href="program.html">Shedule</a></li>
+									<li><a href="program.html">Contests &amp; Events</a></li>
+								</ul>
+							</div>
+						</div> 
+					</li>
+		
+					<li><a href="index.html#recent-news">Recent news</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="photos.html">Photos</a></li>
+					<li>
+		
+						<div class="dropdown">
+							<button class="dropbtn">About<i class="fas fa-angle-double-right"></i></button>
+		
+							<div class="dropdown-content">
+								<ul>
+									<li><a href="contact.html">Contacts</a></li>
+									<li><a href="about.html">Sponsors &amp; Partners</a></li>
+									<li><a href="about.html">FAQ</a></li>
+									<li><a href="about.html">Policies</a></li>
+								</ul>
+							</div>
+						</div> 
+					</li>
+				</ul>
+			</nav>
+		</header>
+			<div class="fixedm"></div>
+		<!-- Aurimas section navigation end-->
+		<section class="count">
+			<div class="wrappy">
+				<div class="seeu">See you in...</div>
+				<div id="clock">
+					<script>
+						var countDownDate = new Date("Sep 9, 2018 09:00:00").getTime();
+						var x = setInterval(function () {
+							var now = new Date().getTime();
+							var distance = countDownDate - now;
+							var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+							var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+							var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+							var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+							document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+								+ minutes + "m " + seconds + "s ";
+
+							if (distance < 0) {
+								clearInterval(x);
+								document.getElementById("clock").innerHTML = "RIGHT NOW!";
+							}
+						}, 1000);
+					</script>
+				</div>
+				<button class="pirk">
+					BUY NOW!
+				</button>
+			</div>
+		</section>
+
+		<!--Alex code ends here-->
+
+		<!--Hamzat's code starts here-->
+        
+        <section class="policies">
+            <div class="policies-wrapper">
+                <h1>DEF CON Privacy Policy</h1>
+                <p>
+                    DEF CON wants to be up-front and transparent with what happens to the information that is gathered when you interact with us.
+                </p>
+                <h3>SERVERS WE CONTROL</h3>
+                <p>
+                    DEF CON controls the servers it uses, no clouds involved so no <q>third party doctrine</q> issues to work around. For ALL services listed below we gather and keep the minimum data necessary, days not weeks, to troubleshoot issues, and rotate logs automatically.
+                </p>
+                <p>
+                    <span>Firewall -</span> These logs are used for debugging and detecting abuse and attacks against our services.
+                </p>
+                <p>
+                    <span>Web server <a href="index.html">https://www.defcon.org/</a> -</span> There are no access or error logs enabled here unless necessary for troubleshooting or identifying abuse that the firewall tips us off about.
+                </p>
+                <p>
+                    <span>Forum server <a href="index.html">https://forum.defcon.org/</a> -</span> We keep up to one month of web/php logs for debugging, auditing and abuse control, then we delete web logs from the forum server. If you are worried about your IP address in our logs consider using the Tor network or similar anonymizer. When you sign up to the forums or get email notifications from the forums, it will be from defconforum@gmail.com so Google can see this activity. This is because sometimes forum spammers generate bad traffic and we don't want the main defcon.org domain to get a bad email reputation. In the future we will move to a different domain, but for now gmail is used.
+                    Email addresses associated with forum accounts are private, but any forum admin or mod may view any user's forum-registered email address.        
+                </p>
+                <p>
+                    All JavaScript functions are served from our server but we may choose to direct web clients to pull JavaScript from maintainers outside of the DEF CON network while our local copy is upgraded to address a vulnerability.
+                </p>
+                <p>
+                    When investigating complaints we only look at Private Messages (PM) when we have user's permission. No form Admins, Mods, Goons should ever ask you for your password. Ever. Full stop.
+                </p>
+                <p>
+                    <span>P2P servers -</span> No bittorrent or eMule logs are generated or stored.<br/>
+                    <span>Mail servers -</span> We mine our maillog looking for mail servers that support smtp-tls and add them to our access list, as well as search for abuse spam.<br/>
+                    <span>DNS servers - </span>Because we support DNSSEC we are a popular target to be used in RAMP DDoS style attacks. We use logs to identify attackers and filter or block as best we can.<br/>
+                </p>
+                <h3>THIRD PARTY SERVERS WE USE</h3>
+                <p>
+                    <span>Ebay.com -</span> The DEF CON store is hosted on eBay. If you purchase something there you are dealing with their privacy policy.<br/>
+                    <span>Amazon.com - </span>We link our book recommendations to our Amazon account.<br/>
+                    <span>Hotel attendee records -</span> Attendees who reserve rooms in the DEF CON block are known to the hotel but not to us. DEF CON does not seek or receive a list of who is registered under our room block.<br/>
+                </p>
+                <p>
+                    <h3>WHAT WE DON'T DO</h3>
+                    <ul>
+                        <li>Sell lug files to anyone</li>
+                        <li>Sell e-mail address to anyone</li>
+                        <li>Turn over logs to anyone without a legal court order</li>
+                        <li>Turn over e-mail to anyone without a legal court order</li>
+                        <li>Turn over snail mail to anyone without a legal court order</li>
+                    </ul>
+                </p>
+                <h3>IF YOU ATTACK US</h3>
+                <p>
+                    If you attack DEF CON all bets are off, and these policies will not protect you. As hackers we won't fight with one arm tied behind our backs.
+                </p>
+                <p>
+                    <span>The Dark Tangent</span><br/>
+                    Please see our <a href="#">transparency report</a>
+                    <ol class="links">
+                        <li>The sources of information that are collected come primarily from the services we offer, but could also include any snail mail you send us, Call for Paper submissions, payments you make on our PayPal store etc.</li>
+                        <li><a href="https://en.wikipedia.org/wiki/Third-Party_Doctrine">https://en.wikipedia.org/wiki/Third-Party_Doctrine</a></li>
+                        <li><a href="https://www.theatlantic.com/technology/archive/2013/12/what-you-need-to-kno…">https://www.theatlantic.com/technology/archive/2013/12/what-you-need-to-kno…</a></li>
+                        <li><a href="http://pages.ebay.com/help/policies/privacy-policy.html">http://pages.ebay.com/help/policies/privacy-policy.html</a></li>
+                        <li><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496">https://www.amazon.com/gp/help/customer/display.html?nodeId=468496</a></li>
+                        <li><a href="http://caesarscorporate.com/privacy/">http://caesarscorporate.com/privacy/</a></li>
+                    </ol>
+                </p>
+            </div>
+        </section>
+		  
+		<!--Hamzat's code ends here-->
+		
+		<!--Povilas form start-->
+		<section class="form">
+				<form class="question_form">
+					<div class="left">
+						<h2>
+							Questions
+						</h2>
+						<label for="i_am">
+							I am:					
+						</label>
+							<select name="who" id="i_am">
+								<option value="volunteer">Volunteer</option>
+								<option value="participant">Participant</option>
+								<option value="press">Press</option>
+								<option value="other">Other</option>
+							</select>	
+						<label for="first_name">
+							First Name
+						</label>
+							<input type="text" id="first_name">
+						<label for="last_name">
+							Last name
+						</label>
+							<input type="text" id="last_name">
+						<label for="email">
+							Email
+						</label>
+							<input type="email" id="email">							
+						<label for="question">
+							Question
+						</label>				
+							<textarea id="question"></textarea>
+						<input id="sendBtn" class="sendBTN" type="submit" value="send">		
+					</div>	
+					<div class="right">
+						<h2>
+							Newsletter
+						</h2>
+						<label for="subscribe">
+							Stay tuned-subscribe!
+						</label>
+						<input id="subscribe" type="text" placeholder="Enter your mail address">
+						<a href="#"><button class="subscribe">subscribe</button></a>
+					</div>	
+				</form>				
+		</section>
+		<!--Povilas form end-->
+		<!--Povilas footer start-->
+		<footer >
+			<a class="stickyArrow" id="up" href="#" title="go up"><img src="icons/up3.png" alt="GO UP"></a> 	
+
+			<div class="social-container"> 				
+				<a href="#" title="Facebook"><img src="icons/f1.png" alt="Facebook"></a>
+				<a href="#" title="Twiter"><img src="icons/t1.png" alt="Twiter"></a>
+				<a href="#" title="LinkedIn"><img src="icons/l1.png" alt="LinkedIn"></a>
+				<a href="#" title="Instagram"><img src="icons/i1.png" alt="Instagram"></a>
+				<a href="#" title="Youtube"><img src="icons/y1.png" alt="Youtube"></a>               						
+			</div> 
+			   
+			Powered by Team One CODE. All copyrights reserved.             					
+		</footer>
+		<!--Povilas form_footer end-->	
+	</body>
+</html>
+
+
+
+
+
+
+			
