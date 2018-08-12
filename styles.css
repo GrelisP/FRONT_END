@@ -82,9 +82,6 @@ button i{
 }
 /*povilas nav edit mobile*/
 
-
-
-
 /* Other devices (desctop/laptop/tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	header{
@@ -179,7 +176,7 @@ button i{
 	nav ul{
 		height: 40px;
 		margin: 0;
-		width: 80%;
+		width: 85%; /* changed to 80->85*/
 		flex-wrap: nowrap;		
 		align-items: flex-end;
 	}
