@@ -165,6 +165,7 @@ button i{
 		font-weight: bold;
 		background-color: inherit;
 		text-align: left;
+		margin-top: 4px;
 	}
 
 	nav ul li{
