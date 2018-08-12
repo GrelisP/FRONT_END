@@ -618,7 +618,18 @@ Main Components
 }
 
 .timeline ul>li{
-  margin-left:12px;
+  margin-left:-8px;
   color: white;
 }
 
+.background-fix{
+  background-color: #303633;
+  width: 90%;
+  margin:0 auto;
+  min-height: 1000px;
+  margin-bottom: 5%;
+}
+
+.timeline ul:last-child{
+  height: 0px;
+}
