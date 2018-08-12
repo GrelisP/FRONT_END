@@ -94,6 +94,7 @@ Main Components
 }
 
 @media only screen and (min-width: 1000px) {
+
   .cd-schedule .timeline li::after {
     width: calc(100% - 60px);
     left: 60px;
@@ -149,7 +150,7 @@ Main Components
   /* never visible - used to add a right padding to .events-group > ul */
   display: inline-block;
   content: '-';
-  width: 1px;
+  
   height: 100%;
   opacity: 0;
   color: transparent;
@@ -193,7 +194,7 @@ Main Components
   .cd-schedule .events .events-group {
     width: 20%;
     float: left;
-    border: 1px solid rgb(14, 3, 3);
+    
     /* reset style */
     margin-bottom: 0;
   }
@@ -210,7 +211,7 @@ Main Components
   }
   .cd-schedule .events .top-info > span {
     /* vertically center inside its parent */
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     padding: 0 .5em;
     text-align: center;
@@ -264,7 +265,7 @@ Main Components
 @media only screen and (min-width: 1000px) {
   .cd-schedule .events {
     /* 60px is the .timeline element width */
-    width: calc(100% - 60px);
+    width: calc(100% - 61px);
     margin-left: 60px;
   }
 }
@@ -609,5 +610,15 @@ Main Components
 .cd-schedule.modal-is-open .cover-layer {
   opacity: 1;
   visibility: visible;
+}
+
+.timeline ul {
+  background-color: #303633;
+  padding-top:2em;
+}
+
+.timeline ul>li{
+  margin-left:12px;
+  color: white;
 }
 
