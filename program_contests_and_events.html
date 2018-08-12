@@ -60,27 +60,7 @@
             class="seeu">See you in...
         </div>
 
-        <div id="clock">
-            <script>
-                var countDownDate = new Date("Sep 9, 2018 09:00:00").getTime();
-                var x = setInterval(function () {
-                    var now = new Date().getTime();
-                    var distance = countDownDate - now;
-                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                    document.getElementById("clock").innerHTML = days + "d " + hours + "h "
-                        + minutes + "m " + seconds + "s ";
-
-                    if (distance < 0) {
-                        clearInterval(x);
-                        document.getElementById("clock").innerHTML = "RIGHT NOW!";
-                    }
-                }, 1000);
-            </script>
-        </div>
+        <div id="clock"></div>
 
         <button class="pirk"> BUY NOW!</button>
     </div>
@@ -88,185 +68,963 @@
 <!--Alex code ends here_Povilas form start-->
 <section class="speakers">
     <div class="speakers_wrapper">
-
-        <!-- Control buttons -->
-        <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('al')"> AL</button>
-            <button class="btn" onclick="filterSelection('eh')"> Ethical hacking</button>
-            <button class="btn" onclick="filterSelection('bc')"> Blockchain</button>
-            <button class="btn" onclick="filterSelection('cs')"> Cyber security</button>
-        </div>
+        <div class="hp">
+                <h2>Speakers of DEFCON</h2>
+                <p>filter by category which you are interested in:</p>
+            </div>
+            <!-- Filter buttons -->
+            <div id="myBtnContainer" class="btnContainer">
+                <button class="btn active showall" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn al" onclick="filterSelection('al')"> AI</button>
+                <button class="btn eh" onclick="filterSelection('eh')"> Ethical hacking</button>
+                <button class="btn bc" onclick="filterSelection('bc')"> Blockchain</button>
+                <button class="btn cs" onclick="filterSelection('cs')"> Cyber security</button>
+            </div>
+        
+            <!-- The filterable elements-->
+            <div class="speakers_container">
+                <div class="filterDiv al cs" id="myBtn-a"><img src="icons/profile_icons/1.jpg" alt="profile_picture"><p>Name</p></div>
+                <!-- The Modal -->
+                <div id="myModal-a" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/1.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>
+                                <p class="al">Artificial inteligence</p>                            
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>
+                        <span class="close-a close">close x</span>                    
+                    </div>            
+                </div>
+                    
+                <div class="filterDiv al" id="myBtn-b"><img src="icons/profile_icons/2.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-b" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/2.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>                            
+                                <p class="al">Artificial inteligence</p>                            
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-b close">close x</span>                    
+                    </div>            
+                </div>
+                
+                <div class="filterDiv bc" id="myBtn-c"><img src="icons/profile_icons/3.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-c" class="modal modal2">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/3.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>                            
+                                <p class="bc">Blockchain</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-c close">close x</span>                    
+                    </div>            
+                </div>
+                
+                <div class="filterDiv eh" id="myBtn-d"><img src="icons/profile_icons/4.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-d" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/4.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>                            
+                                <p class="eh">Ethical hacking</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-d close">close x</span>                    
+                    </div>            
+                </div>
+                
+                <div class="filterDiv al" id="myBtn-e"><img src="icons/profile_icons/5.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-e" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/5.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="al">Artificial inteligence</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-e close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv cs" id="myBtn-f"><img src="icons/profile_icons/6.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-f" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/6.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>                            
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-f close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv bc" id="myBtn-g"><img src="icons/profile_icons/7.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-g" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/7.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>                            
+                                <p class="bc">Blockchain</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-g close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv cs" id="myBtn-h"><img src="icons/profile_icons/8.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-h" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/8.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>                            
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-h close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv cs" id="myBtn-i"><img src="icons/profile_icons/9.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-i" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/9.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-i close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv eh" id="myBtn-j"><img src="icons/profile_icons/10.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-j" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/10.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="eh">Ethical hacking</p>                            
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-j close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv eh" id="myBtn-k"><img src="icons/profile_icons/11.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-k" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/11.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="eh">Ethical hacking</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-k close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv al eh" id="myBtn-l"><img src="icons/profile_icons/12.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-l" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/12.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>                            
+                                <p class="al">Artificial inteligence</p>
+                                <p class="eh">Ethical hacking</p>                            
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-l close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv cs" id="myBtn-m"><img src="icons/profile_icons/13.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-m" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/13.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-m close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv bc" id="myBtn-n"><img src="icons/profile_icons/14.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-n" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/14.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="bc">Blockchain</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-n close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv al" id="myBtn-o"><img src="icons/profile_icons/15.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-o" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/15.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>                            
+                                <p class="al">Artificial inteligence</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-o close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv eh" id="myBtn-p"><img src="icons/profile_icons/16.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-p" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/16.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="eh">Ethical hacking</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-p close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv cs" id="myBtn-q"><img src="icons/profile_icons/17.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-q" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/17.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-q close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv eh" id="myBtn-r"><img src="icons/profile_icons/18.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-r" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/18.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="eh">Ethical hacking</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-r close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv eh" id="myBtn-s"><img src="icons/profile_icons/19.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-s" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/19.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="eh">Ethical hacking</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-s close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv cs" id="myBtn-t"><img src="icons/profile_icons/20.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-t" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/20.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>                            
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-t close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv bc" id="myBtn-u"><img src="icons/profile_icons/21.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-u" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/21.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="bc">Blockchain</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-u close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv cs" id="myBtn-v"><img src="icons/profile_icons/22.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-v" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/22.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-v close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv cs" id="myBtn-w"><img src="icons/profile_icons/23.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-w" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/23.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>                            
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-w close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv al" id="myBtn-x"><img src="icons/profile_icons/24.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-x" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/24.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="al">Artificial inteligence</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-x close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv al" id="myBtn-y"><img src="icons/profile_icons/25.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-y" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/25.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="al">Artificial inteligence</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-y close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv bc" id="myBtn-z"><img src="icons/profile_icons/26.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-z" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/26.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="bc">Blockchain</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-z close">close x</span>                    
+                    </div>            
+                </div>
+                <div class="filterDiv cs" id="myBtn-aa"><img src="icons/profile_icons/27.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-aa" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/27.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-aa close">close x</span>                    
+                    </div>            
+                </div>
     
-        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-        <div class="speakers_container">
-            <div class="filterDiv cs"><img src="icons/profile_icons/1.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/2.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/3.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/4.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc cs"><img src="icons/profile_icons/5.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/6.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/7.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc"><img src="icons/profile_icons/8.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/9.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al eh"><img src="icons/profile_icons/10.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/11.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/12.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/13.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv "><img src="icons/profile_icons/14.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc cs"><img src="icons/profile_icons/15.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cars"><img src="icons/profile_icons/16.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/17.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al bc"><img src="icons/profile_icons/18.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv colors"><img src="icons/profile_icons/19.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/20.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/21.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/22.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs al"><img src="icons/profile_icons/23.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/24.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc"><img src="icons/profile_icons/25.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/26.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv "><img src="icons/profile_icons/27.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh al"><img src="icons/profile_icons/28.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cars"><img src="icons/profile_icons/29.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/30.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/1.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/2.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/3.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/4.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc cs"><img src="icons/profile_icons/5.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/6.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/7.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc"><img src="icons/profile_icons/8.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/9.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al eh"><img src="icons/profile_icons/10.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/11.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/12.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/13.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv "><img src="icons/profile_icons/14.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc cs"><img src="icons/profile_icons/15.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cars"><img src="icons/profile_icons/16.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/17.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al bc"><img src="icons/profile_icons/18.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv colors"><img src="icons/profile_icons/19.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/20.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/21.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/22.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs al"><img src="icons/profile_icons/23.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/24.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc"><img src="icons/profile_icons/25.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/26.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv "><img src="icons/profile_icons/27.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh al"><img src="icons/profile_icons/28.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cars"><img src="icons/profile_icons/29.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/30.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/2.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/3.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/4.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc cs"><img src="icons/profile_icons/5.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/6.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/7.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc"><img src="icons/profile_icons/8.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/9.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al eh"><img src="icons/profile_icons/10.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/11.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/12.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/13.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv "><img src="icons/profile_icons/14.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc cs"><img src="icons/profile_icons/15.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cars"><img src="icons/profile_icons/16.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/17.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al bc"><img src="icons/profile_icons/18.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv colors"><img src="icons/profile_icons/19.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/20.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/21.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/22.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs al"><img src="icons/profile_icons/23.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/24.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc"><img src="icons/profile_icons/25.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/26.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv "><img src="icons/profile_icons/27.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh al"><img src="icons/profile_icons/28.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cars"><img src="icons/profile_icons/29.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/30.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/1.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/2.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/3.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/4.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc cs"><img src="icons/profile_icons/5.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/6.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/7.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc"><img src="icons/profile_icons/8.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/9.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al eh"><img src="icons/profile_icons/10.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/11.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/12.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/13.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv "><img src="icons/profile_icons/14.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc cs"><img src="icons/profile_icons/15.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cars"><img src="icons/profile_icons/16.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/17.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al bc"><img src="icons/profile_icons/18.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv colors"><img src="icons/profile_icons/19.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/20.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh"><img src="icons/profile_icons/21.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/22.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs al"><img src="icons/profile_icons/23.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/24.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv bc"><img src="icons/profile_icons/25.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cs"><img src="icons/profile_icons/26.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv "><img src="icons/profile_icons/27.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv eh al"><img src="icons/profile_icons/28.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv cars"><img src="icons/profile_icons/29.jpg" alt="profile_picture"><p>Name</p></div>
-            <div class="filterDiv al"><img src="icons/profile_icons/30.jpg" alt="profile_picture"><p>Name</p></div>
-     
-           
-            <script>
-                    filterSelection("all")
-                    function filterSelection(c) {
-                      var x, i;
-                      x = document.getElementsByClassName("filterDiv");
-                      if (c == "all") c = "";
-                      for (i = 0; i < x.length; i++) {
-                        RemoveClass(x[i], "show");
-                        if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
-                      }
-                    }
-                    
-                    function AddClass(element, name) {
-                      var i, arr1, arr2;
-                      arr1 = element.className.split(" ");
-                      arr2 = name.split(" ");
-                      for (i = 0; i < arr2.length; i++) {
-                        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-                      }
-                    }
-                    
-                    function RemoveClass(element, name) {
-                      var i, arr1, arr2;
-                      arr1 = element.className.split(" ");
-                      arr2 = name.split(" ");
-                      for (i = 0; i < arr2.length; i++) {
-                        while (arr1.indexOf(arr2[i]) > -1) {
-                          arr1.splice(arr1.indexOf(arr2[i]), 1);     
-                        }
-                      }
-                      element.className = arr1.join(" ");
-                    }
-                    
-                    // Add active class to the current button (highlight it)
-                    var btnContainer = document.getElementById("myBtnContainer");
-                    var btns = btnContainer.getElementsByClassName("btn");
-                    for (var i = 0; i < btns.length; i++) {
-                      btns[i].addEventListener("click", function(){
-                        var current = document.getElementsByClassName("active");
-                        current[0].className = current[0].className.replace(" active", "");
-                        this.className += " active";
-                      });
-                    }
-                   
-                    </script>
-        </div>
+                <div class="filterDiv eh" id="myBtn-ab"><img src="icons/profile_icons/28.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-ab" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/28.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="eh">Ethical hacking</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-ab close">close x</span>                    
+                    </div>            
+                </div>
+    
+                <div class="filterDiv eh" id="myBtn-ac"><img src="icons/profile_icons/29.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-ac" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/29.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="eh">Ethical hacking</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-ac close">close x</span>                    
+                    </div>            
+                </div>
+    
+                <div class="filterDiv cs" id="myBtn-ad"><img src="icons/profile_icons/30.jpg" alt="profile_picture"><p>Name</p></div>            
+                <div id="myModal-ad" class="modal">                
+                    <div class="modal-content">
+                        <div class="modal-left">
+                            <img src="icons/profile_icons/30.jpg" alt="profile_picture">
+                            <div class="modal-mobile-left">
+                                <h2>Salivop Silerg</h2>
+                                <p>Entry level Front-End developer</p>
+                                <h3>Topics:</h3>
+                                <p class="cs">Cyber security</p>
+                            </div>
+                        </div>
+                        <div class="modal-right">
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                            <p>
+                                Salivop Silerg – Chief Strategy Officer and the head of the self-driving division at Lyft. Salivop has been a Silicon 
+                                Valley local for many years, with a reputation of turning disruptive ideas into big businesses. Silerg was one 
+                                of the first investors in Lyft in its early rounds, he is also the co-founder and former CEO of both Snapfish 
+                                (acquired by HP in 2005) and Fitmob (acquired by ClassPass in 2015), as well as the managing director of 
+                                Mayfield Fund. Lyft is the main competitor of UBER in the US and Canada.
+                            </p>
+                        </div>                      
+                        <span class="close-ad close">close x</span>                    
+                    </div>            
+                </div> 
+            </div>
     </div>
 </section>
 
@@ -429,6 +1187,16 @@
     <a id="up" href="#" title="go up"><img src="icons/up3.png" alt="GO UP"></a>		
         Powered by Team One CODE. All copyrights reserved.					
 </footer>
-<!--Povilas form_footer end-->		
+<!--Povilas form_footer end-->
+<!--scripts-->
+<script src="javascript/clock.js"></script>
+<script src="javascript/speakers.js"></script>
+<script src="shedule/js/modernizr.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+    if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="shedule/js/main.js"></script> <!-- Resource jQuery -->
+        
 </body>
 </html>		
