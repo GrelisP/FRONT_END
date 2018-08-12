@@ -7,7 +7,7 @@ body {
 header {
 	background: #7EA2AA;
 	position: unset;
-	z-index: 1;
+	z-index: 4;
 }
 .fixedm {
 	display: none;
@@ -813,7 +813,7 @@ textarea{
 /*Povilas form end*/
 /*povilas speakers start*/
 .speakers{
-	background-color: #7EA2AA;	
+	background-color: #8BE8CB;	
 	padding: 5% 0;
 	min-height: 800px;
 }
