@@ -1212,7 +1212,7 @@ footer img{
 
 .modal-content span{
 	transform: rotate(270deg);
-	min-width: 80px;
+	min-width: 100px;
 	max-height: 30px;
 	align-self: flex-start;
 	padding:0 17px 10px 0 ;	
