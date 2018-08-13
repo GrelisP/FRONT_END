@@ -617,8 +617,8 @@ Main Components
   padding-top:2em;
 }
 
-.timeline ul>li{
-  margin-left:-8px;
+.timeline ul>li span{
+  margin-left:-1.4%;
   color: white;
 }
 
