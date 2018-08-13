@@ -1336,10 +1336,8 @@ p.cs, p.al, p.eh, p.bc{
 	text-shadow: 1px 1px 5px red;
 }
 
-.transition h2{
-	border-bottom: 1px solid rgba(255, 0, 0, 0.096);
-	width: 90%;
-	background-color: #24e42a25;
+.transition h2{	
+	width: 90%;	
 	margin: 0 auto;
 	height: 70px;
 }
