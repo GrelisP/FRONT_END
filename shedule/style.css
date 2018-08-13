@@ -429,7 +429,7 @@ Main Components
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 4;
   background: rgba(0, 0, 0, 0.1);
   /* replace text with icon */
   color: transparent;
