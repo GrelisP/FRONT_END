@@ -64,9 +64,9 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 /*povilas nav edit mobile*/
 .nav-logo{
-	font-size: 60px;
+	font-size: 30px; /*Aurimas*/
 	text-align: center;
-	padding: 40px;
+	padding: 5px; /*Aurimas*/
 	font-weight: bold;
 	background-color: #4d4d4d;	
 }
@@ -230,6 +230,14 @@ section.banner {
 
 .banner h1 a:hover {
 	color: red;
+}
+
+/* for small screen - Aurimas*/
+@media only screen and (max-width: 768px) {
+	section.banner {
+		height: 115px;
+	}
+
 }
   /* Hamzat's code ends here */
 /*Alexo code starts here*/
