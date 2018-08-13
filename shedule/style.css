@@ -548,7 +548,7 @@ Main Components
     background: transparent;
   }
   .cd-schedule .event-modal .close::after, .cd-schedule .event-modal .close::before {
-    background: #222222;
+    background: #ebe3e3;
     height: 16px;
   }
 }
