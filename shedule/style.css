@@ -618,7 +618,7 @@ Main Components
 }
 
 .timeline ul>li span{
-  margin-left:-1.4%;
+  margin-left: -40px;
   color: white;
 }
 
@@ -627,7 +627,7 @@ Main Components
   width: 90%;
   margin:0 auto;
   min-height: 1000px;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
 }
 
 .timeline ul:last-child{

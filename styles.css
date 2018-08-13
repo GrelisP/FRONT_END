@@ -1138,11 +1138,13 @@ footer img{
 	transition-duration: 0.4s;
 	border-radius: 2px;
 }
-#up img{
+#up img{	
 	height: 15px;
 	float: right;
-	padding: 22.5px 5% 0 0;	
+	padding: 22.5px 5% 0 0;		
 }
+
+
 
 /*Povilas footer end*/
 /*test of modals */
