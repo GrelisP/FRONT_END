@@ -1,0 +1,9 @@
+CREATE TABLE feedback(
+    id INT(6) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(70) NOT NULL,
+    email VARCHAR(70) NOT NULL,
+    feedback TEXT NOT NULL,
+    phone VARCHAR(30) NOT NULL,
+    subject TEXT NOT NULL
+    date TIMESTAMP 
+)
