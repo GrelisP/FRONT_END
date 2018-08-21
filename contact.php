@@ -19,7 +19,6 @@
 			}
 			.popup {
 				color: red;
-				font-weight: bold;
 				}
 			.question {
 				color:black;
@@ -118,7 +117,8 @@ if($_POST){
         	//testing for SQL injection;        
         $name = $conn->real_escape_string($name);
 		$email = $conn->real_escape_string($email);
-        $feedback = $conn->real_escape_string($feedback);
+		$feedback = $conn->real_escape_string($feedback);
+		$subject = $conn->real_escape_string($subject);
         $phone = $conn->real_escape_string($phone);
         $subject = $conn->real_escape_string($subject);
         	//write to the table `teamon`;
@@ -126,18 +126,18 @@ if($_POST){
             if($saved){
                     header('Location:' . $_SERVER['PHP_SELF'] . '?success=OK'); 
             }else{ 
-				$error['database'] = "Error when saving"; 
+				$error['database'] = "Error when saving"; //display error if faill;
 			}
 
     } else { //testing input one by one;
         if(strlen($name) == 0){
-            $error['name'] = 'Error - Please fill in all name field!';
+            $error['name'] = 'Error - Please fill in name field!';
         }
         if(strlen($name) > 70){
             $error['name'] = 'Error - Max charakters reached!';
         }
         if(strlen($email) == 0){
-            $error['email'] = 'Error - Please fill in all email field!';
+            $error['email'] = 'Error - Please fill in email field!';
         }
         if(strlen($phone) == 0){
             $error['phone'] = 'Error - Please fill in phone field!';
