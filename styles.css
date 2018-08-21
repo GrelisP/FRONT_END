@@ -1138,7 +1138,14 @@ footer img{
 	height: 15px;
 	float: right;
 	padding: 22.5px 5% 0 0;		
+	z-index: 10;
 }
+
+/*questions n footer fix (shedule) */
+.form *, footer *{
+	box-sizing: unset;
+}
+
 
 
 
