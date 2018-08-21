@@ -18,16 +18,15 @@
 				text-transform: uppercase;
 			}
 			.popup {
-            color: red;
-            font-weight: bold;
-			}
+				color: red;
+				font-weight: bold;
+				}
 			.question {
 				color:black;
 				font-weight: normal;
 				padding:10px;
 				font-size:17px;
 			}	
-			
 			
 		</style>
 	</head>	
@@ -95,7 +94,7 @@
 		<!--Alex code ends here-->
 
         <!--Hamzat's code starts here-->
-<!-- php script-->
+<!-- php script-Aurimas-->
 
 <?php 
 $name = isset($_POST['name']) ? $_POST['name'] : '';
@@ -109,48 +108,45 @@ $error = array("name" => "","email" => "", "feedback" => "","database" => "", "c
 
 if($_POST){
     if(!empty($_POST['website'])) die(); //honeypot - if not empty - scrypt stop;
-
+		//checked input conditions;
     if(strlen($name)>0 && strlen($feedback)>0 && strpos($email,"@") && strlen($name)<70 && $check==4 && strlen($phone) > 0 && strlen($subject) > 0 ) {
-
-        // Attempt MySQL server connection to the db
+        	// attempt MySQL server connection to the db 'fullstack';
         $conn = new mysqli('localhost','root','root','fullstack'); 
-            //checking conection 
-            if ($conn->connect_error) {
+            if ($conn->connect_error) {  
                 die("Connection failed: " . $conn->connect_error);
                 }
-        //no sql injection        
-        $title = $conn->real_escape_string($title);
-		$author = $conn->real_escape_string($author);
+        	//testing for SQL injection;        
+        $name = $conn->real_escape_string($name);
+		$email = $conn->real_escape_string($email);
         $feedback = $conn->real_escape_string($feedback);
         $phone = $conn->real_escape_string($phone);
         $subject = $conn->real_escape_string($subject);
-        
-        //Write to the table 
+        	//write to the table `teamon`;
         $saved = $conn->query("INSERT INTO `teamone`(`name`, `email`, `feedback`, `phone`, `subject`) VALUES ('$name','$email','$feedback','$phone','$subject' )");
             if($saved){
                     header('Location:' . $_SERVER['PHP_SELF'] . '?success=OK'); 
             }else{ 
-				$error['database'] = "Error when saving"; //if not save to DB
+				$error['database'] = "Error when saving"; 
 			}
 
-    } else { //cheking input one by one
+    } else { //testing input one by one;
         if(strlen($name) == 0){
-            $error['name'] = 'Error - Please fill in all required fields!';
+            $error['name'] = 'Error - Please fill in all name field!';
         }
         if(strlen($name) > 70){
             $error['name'] = 'Error - Max charakters reached!';
         }
         if(strlen($email) == 0){
-            $error['email'] = 'Error - Please fill in all required fields!';
+            $error['email'] = 'Error - Please fill in all email field!';
         }
         if(strlen($phone) == 0){
-            $error['phone'] = 'Error - Please fill in all required fields!';
+            $error['phone'] = 'Error - Please fill in phone field!';
         }
         if(strlen($subject) == 0){
-            $error['subject'] = 'Error - Please fill in all required fields!';
+            $error['subject'] = 'Error - Please fill in subject field!';
         }
         if(strlen($feedback) == 0){
-            $error['feedback'] = 'Error - Please fill in all required fields!';
+            $error['feedback'] = 'Error - Please fill in feedback field!';
         }
         if($check !== 4){
             $error['check'] = 'Error - Please write correct answer!';
@@ -174,7 +170,7 @@ if(strlen($success) == 0) {
 									value="<?php echo $phone;?>"/>
 								<span class="popup"><?php echo $error['subject']; ?></span><input type="text" class="input" name="subject" placeholder="Subject"
 									value="<?php echo $subject;?>">
-								<span class="question">Question: How many angles have a rectangle?</span><span class="popup"><?php echo  $error['check']; ?></span><input type="text" class="input" name="check" />
+								<span class="question">Security question: How many angles have a rectangle?</span><span class="popup"><?php echo  $error['check']; ?></span><input type="text" class="input" name="check" />
 								<input type="text" id="website" name="website"/>
 								<span class="popup"><?php echo $error['database']; ?></span>
 					</div>
