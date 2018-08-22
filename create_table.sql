@@ -4,6 +4,6 @@ CREATE TABLE feedback(
     email VARCHAR(70) NOT NULL,
     feedback TEXT NOT NULL,
     phone VARCHAR(30) NOT NULL,
-    subject TEXT NOT NULL
+    subject TEXT NOT NULL,
     date TIMESTAMP 
 )
